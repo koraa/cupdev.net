@@ -6,7 +6,7 @@
     "owner": "Michael Varner",
     "description": "Michael Varners website",
     "index_articles": 3
-  }
+  },
 
-  ignore: ["**.off", "**proto**", "**/_*"]
+  "ignore": ["**.off", "**proto**", "**/_*"]
 }
