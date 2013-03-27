@@ -22,7 +22,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "bootstrap":              "*",
+    "twitter-bootstrap":      "*",
     "coffee-script":          "*",
     "jquery":                 "*",
     "wintersmith":            "*",
