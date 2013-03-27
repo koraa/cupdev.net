@@ -2,9 +2,9 @@
   "plugins": ["wintersmith-stylus", "wintersmith-less", "wintersmith-jade", "wintersmith-browserify"],
   "locals": {
     "url": "http://localhost:8080",
-    "name": "automata.js test",
-    "owner": "mapc",
-    "description": "Test Lab for cellular automata",
+    "name": "Cupdev",
+    "owner": "Michael Varner",
+    "description": "Michael Varners website",
     "index_articles": 3
   }
 }
