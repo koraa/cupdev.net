@@ -25,6 +25,7 @@
     "twitter-bootstrap":      "*",
     "coffee-script":          "*",
     "jquery":                 "*",
+    "coffeeify":              "*",
     "wintersmith":            "*",
     "wintersmith-stylus":     "*",
     "wintersmith-less":       "*",
