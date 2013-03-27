@@ -33,7 +33,7 @@
     "wintersmith-jade":       "git+https://github.com/smebberson/wintersmith-jade.git"
   },
   "keywords": [
-      "website"
+    "website"
   ],
   "readmeFilename": "README.md",
   "_id": "cupdev.net@0.0.1",
