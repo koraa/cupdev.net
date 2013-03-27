@@ -1,5 +1,5 @@
 {
-  "plugins": ["wintersmith-stylus", "./plugins/wintersmith-jade/", "./plugins/wintersmith-browserify/"],
+  "plugins": ["wintersmith-stylus", "wintersmith-less", "./plugins/wintersmith-jade/", "./plugins/wintersmith-browserify/"],
   "locals": {
     "url": "http://localhost:8080",
     "name": "automata.js test",

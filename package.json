@@ -27,6 +27,7 @@
     "jquery":                 "*",
     "wintersmith":            "*",
     "wintersmith-stylus":     "*",
+    "wintersmith-less":       "*",
     "wintersmith-browserify": "git+https://github.com/mappleconfusers/wintersmith-browserify.git",
     "wintersmith-jade":       "git+https://github.com/smebberson/wintersmith-jade.git"
   },
