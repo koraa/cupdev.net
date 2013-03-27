@@ -1,0 +1,39 @@
+{
+  "name": "cupdev.net",
+  "description": "Website of Michael Varner",
+  "version": "0.0.1",
+  "url": "http://cupdev.net",
+  "homepage": "https://cupdev.net",
+  "author": {
+    "name": "Michael Varner",
+    "email": "webmaster@cupdev.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mappleconfusers/cupdev.net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mappleconufsers/cupdev.net/issues"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "bootstrap":              "*",
+    "coffee-script":          "*",
+    "jquery":                 "*",
+    "wintersmith":            "*",
+    "wintersmith-stylus":     "*",
+    "wintersmith-browserify": "git+https://github.com/mappleconfusers/wintersmith-browserify.git",
+    "wintersmith-jade":       "git+https://github.com/smebberson/wintersmith-jade.git"
+  },
+  "keywords": [
+      "website"
+  ],
+  "readmeFilename": "README.md",
+  "_id": "cupdev.net@0.0.1",
+  "_from": "cupdev.net@"
+}

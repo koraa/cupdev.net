@@ -1,9 +1,10 @@
 {
+  "plugins": ["wintersmith-stylus", "./plugins/wintersmith-jade/", "./plugins/wintersmith-browserify/"],
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "The Wintersmith",
-    "description": "-32°C ain't no problems!",
+    "name": "automata.js test",
+    "owner": "mapc",
+    "description": "Test Lab for cellular automata",
     "index_articles": 3
   }
 }
