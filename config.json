@@ -7,4 +7,6 @@
     "description": "Michael Varners website",
     "index_articles": 3
   }
+
+  ignore: ["**.off", "**proto**", "**/_*"]
 }
