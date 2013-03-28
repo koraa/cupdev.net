@@ -1,6 +1,6 @@
 ---
 title: Cupdev Blog
-template: blog.jade
+template: site.jade
 ---
 
 *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae nulla mauris. Phasellus rutrum diam interdum leo lobortis semper. Proin a lorem in nibh consectetur dignissim. Nulla sed lacus non mauris convallis adipiscing quis sit amet sem. Nam vestibulum luctus ligula eu scelerisque. Mauris est urna, feugiat eu venenatis non, fringilla sed diam. Vestibulum a mattis ipsum. Phasellus quis lorem sem, vel blandit arcu. Duis pellentesque sem consequat erat dignissim fringilla.*
