@@ -1,7 +1,23 @@
-.cannon {
+.cannon, .cannon li {
     font-family: @cannonFontFamily;
     font-size: @cannonFontSize;
+    font-weight: @cannonFontWeight;
     text-transform: @cannonFontTransform;
     text-decoration: none;
+    line-height:  @cannonLineHeight;
 
+    a {
+        color: @black;
+        text-decoration: none;
+
+        &:hover {
+            color: @linkColorHover;
+            text-decoration: none;
+        }
+    }
 }
+
+//.cannon > * {
+//    padding: 0.0015em;
+//    border: solid @black 0.002em;
+//}

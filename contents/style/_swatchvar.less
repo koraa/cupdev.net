@@ -1,3 +1,34 @@
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// Accent colors
+// -------------------------
+@blue:                  #0063AC;
+@blueDark:              #0064cd;
+@green:                 #1C9B47;
+@red:                   #9c0001;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        #F6F6F6;
+@textColor:             @grayDark;
+
+// Links
+// -------------------------
+@linkColor:             @blue;
+@linkColorHover:        darken(@linkColor, 5%);
+
 // Typography
 // -------------------------
 @sansFontFamily:  Roboto, "Helvetica Neue", Helvetica, "Lucida Grande", "Lucida Sans", Arial, "Ubuntu", sans-serif;
@@ -12,7 +43,9 @@
 
 @cannonFontFamily:    'Montserrat', @altFontFamily; 
 @cannonFontSize:      40pt;
-@cannonFontTransform: capitalize;
+@cannonLineHeight:    1em;
+@cannonFontWeight:    700;
+@cannonFontTransform: uppercase;
 
 @headingsFontFamily: @altFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight: bold;    // instead of browser default, bold
