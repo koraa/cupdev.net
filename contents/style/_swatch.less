@@ -1,3 +1,73 @@
+// -------------------------------------------------
+// STRIPEs
+
+
+.bg-stripes(@color1: #000, @color2: transparent, @angle: 45deg, @size: 30px) {
+  background-size: @size @size;
+
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+    color-stop(.25, @color1),
+    color-stop(.25, @color2),
+    color-stop(.5,  @color2),
+    color-stop(.5,  @color1), 
+    color-stop(.75, @color1), 
+    color-stop(.75, @color2), 
+    to(@color2));
+  background-image: -webkit-linear-gradient(@angle, 
+    @color1 25%,
+    @color2 25%,
+    @color2 50%, 
+    @color1 50%,
+    @color1 75%, 
+    @color2 75%,
+    @color2);
+  background-image: -moz-linear-gradient(@angle,
+    @color1 25%, 
+    @color2 25%, 
+    @color2 50%,
+    @color1 50%,
+    @color1 75%, 
+    @color2 75%,
+    @color2);
+  background-image: -o-linear-gradient(@angle,
+    @color1 25%, 
+    @color2 25%, 
+    @color2 50%,
+    @color1 50%, 
+    @color1 75%, 
+    @color2 75%, 
+    @color2);
+  background-image: linear-gradient(@angle,
+    @color1 25%,
+    @color2 25%,
+    @color2 50%, 
+    @color1 50%,
+    @color1 75%,
+    @color2 75%,
+    @color2);
+}
+
+
+.border-stripes(@color1: @stripeBorderColor,    @color2: transparent, 
+                @angle:  @stripeBorderAngle,    @size:   @stripeBorderFreq, 
+                @top:    @stripeBorderWidth,    @right:  @stripeBorderWidth,
+                @bottom: @stripeBorderWidth,    @left:   @stripeBorderWidth) {
+  position: relative;
+  &:before {
+    content: "";
+    .bg-stripes(@color1, @color2, @angle, @size);
+    position: absolute;
+    top:    (0- @top);
+    bottom: (0- @bottom);
+    left:   (0- @left);
+    right:  (0- @right);
+    z-index: -10;
+  }
+}
+
+// -------------------------------------------------
+// CANNONN
+
 .cannon, .cannon li {
     font-family: @cannonFontFamily;
     font-size: @cannonFontSize;
@@ -21,3 +91,26 @@
 //    padding: 0.0015em;
 //    border: solid @black 0.002em;
 //}
+
+// ----------------------------------------------------
+// STRIPES
+
+.bordered {
+  .border-stripes();
+  background: @bodyBackground;
+  border: 1px solid black;
+  margin: @stripeBorderWidth + 10px;
+  border-radius: 5px;
+
+  &:before {
+      border-radius: 10px;
+  }
+}
+
+hr {
+  border: 0px;
+
+  height: @stripeBorderWidth;
+  .bg-stripes(@stripeBorderColor, transparent,
+              @stripeBorderAngle, @stripeBorderFreq);
+}
