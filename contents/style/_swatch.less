@@ -51,8 +51,10 @@
 .border-stripes(@color1: @stripeBorderColor,    @color2: transparent, 
                 @angle:  @stripeBorderAngle,    @size:   @stripeBorderFreq, 
                 @top:    @stripeBorderWidth,    @right:  @stripeBorderWidth,
-                @bottom: @stripeBorderWidth,    @left:   @stripeBorderWidth) {
+                @bottom: @stripeBorderWidth,    @left:   @stripeBorderWidth,
+                @rad: 0px) {
   position: relative;
+  border-radius: @rad;
   &:before {
     content: "";
     .bg-stripes(@color1, @color2, @angle, @size);
@@ -62,6 +64,7 @@
     left:   (0- @left);
     right:  (0- @right);
     z-index: -10;
+    border-radius: @rad + @top;
   }
 }
 
