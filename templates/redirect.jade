@@ -2,9 +2,9 @@
 title
   head
     title Redirect
-    meta(http-equiv="REFRESH", content="0;url=#{page.title}")
+    meta(http-equiv="REFRESH", content="0;url=#{page.metadata.dest}")
   body
     | This is not the website you are looking for.
     | You are looking for:
-    a(href="#{page.title}")= page.title
+    a(href="#{page.metadata.dest}")= page.metadata.dest
   

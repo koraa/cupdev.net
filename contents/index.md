@@ -1,5 +1,6 @@
 ---
 template: redirect.jade
-title: /blog/
+title: null
+dest: /blog/
 ---
 
