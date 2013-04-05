@@ -14,7 +14,9 @@ html(lang="en")
         /////| BODY TEXT ----------------------------------------------------
 
         .body
+            mixin GET(page.metadata.fetch)
             block body
+            mixin GET(page.metadata.fetch_post)
 
         /////| FOOT ----------------------------------------------------------
         include _footer
