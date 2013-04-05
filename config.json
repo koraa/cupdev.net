@@ -8,5 +8,6 @@
     "index_articles": 3
   },
 
-  "ignore": ["**.off", "**proto**", "**/_*"]
+  "ignore": ["**.off", "**proto**", "**/_*"],
+  "require": ["coffee-script", "jquery", "httpsync"]
 }

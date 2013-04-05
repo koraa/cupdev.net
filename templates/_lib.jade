@@ -1,0 +1,4 @@
+mixin GET(url)
+  - if (url)
+    - console.log("GET:", url)
+    #{String(httpsync.get(url).end().data)}

@@ -1,7 +1,10 @@
 extends _framework
 
+
 block head
   script(src='src/blog.js')
 
 block body
+  mixin GET(page.metadata.fetch)
   != page.html
+  mixin GET(page.metadata.fetch_post)
