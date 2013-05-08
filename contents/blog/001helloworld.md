@@ -1,7 +1,8 @@
 title: Hello World
 template: 'site.jade'
+date:  Mon, 06 May 2013 23:30:36 +0200
 
-Soo. If you can see this it means I managed to set ap my blog.
+Soo. If you can see this it means I managed to setup my blog.
 *Yaaay*
 
 A wonderful world awaits you on this blog…just not yet.  
