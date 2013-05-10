@@ -2,7 +2,6 @@ extends _framework
 
 
 block head
-  script(src='src/blog.js')
 
 block body
   != page.html
@@ -13,7 +12,7 @@ block body
           h2.title
             a(href=post.url)
               = post._metadata.title
-          span.littlemeta
+          span.lmeta.date
             = post.date
         span.text
           = post._content
