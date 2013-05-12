@@ -1,6 +1,8 @@
+---
 title: Hello World
 template: 'article.jade'
 date:  Mon, 06 May 2013 23:30:36 +0200
+---
 
 Soo. If you can see this it means I managed to setup my blog.
 *Yaaay*
