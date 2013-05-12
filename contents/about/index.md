@@ -1,5 +1,5 @@
 ---
-title: Cupdev Blog
+title: About Me
 template: site.jade
 ---
 

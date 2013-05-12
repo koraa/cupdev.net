@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-.onearticle#links {
+#links {
   // TODO: Make relative?
   margin-left: -45px;
   margin-right: -25px;
@@ -21,11 +21,6 @@
 }
 
 .article {
-  margin: 40px;
-  padding: 15px;
-  background: @bodyBackground;
-  border: 1px solid black;
-  .border-stripes();
 
   .title {
     margin-right: 15px;
@@ -50,3 +45,18 @@
   }
 }
 
+.embed-article {
+  .article;
+
+  margin: 40px;
+  padding: 15px;
+  background: @bodyBackground;
+  border: 1px solid black;
+  .border-stripes();
+}
+
+.one-article {
+  .article;
+
+  margin: 30px;
+}

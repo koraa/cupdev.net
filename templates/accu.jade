@@ -7,7 +7,7 @@ block body
   != page.html
   each post in widx.embed(page.parent)
     if (post != page)
-      .article
+      .embed-article
         .head
           h2.title
             a(href=post.url)
