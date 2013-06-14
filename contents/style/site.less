@@ -47,6 +47,7 @@ body {
 
   .head {
     display: block;
+    text-align: center;
   }
 }
 
@@ -64,4 +65,78 @@ body {
   .article;
 
   margin: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @serifFontFamily; 
+  font-style: italic;
+
+
+
+  color: @textColor;
+  a {
+    color: @textColor;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@big-header-ornament-left: '/media/ornament_title_big_left.svg';
+@big-header-ornament-right: '/media/ornament_title_big.svg';
+@big-header-ornament-width:  50.45px;
+@big-header-ornament-height: 13.12px;
+@big-header-orgament-ratio:  @big-header-ornament-height / @big-header-ornament-width;
+
+@small-header-ornament-left: '/media/ornament_title_small_left.svg';
+@small-header-ornament-right: '/media/ornament_title_small.svg';
+@small-header-ornament-width:  1009.28px;
+@small-header-ornament-height: 262.35px;
+@small-header-orgament-ratio:  @small-header-ornament-height / @small-header-ornament-width;
+
+@ornament-L-width:  7em;
+@ornament-L-height: @ornament-L-width * @big-header-orgament-ratio;
+@ornament-L-pad:    8em;
+
+@ornament-M-width:  5em;
+@ornament-M-height: @ornament-M-width * @big-header-orgament-ratio;
+@ornament-M-pad:    6em;
+
+@ornament-S-width:  3em;
+@ornament-S-height: @ornament-S-width * @big-header-orgament-ratio;
+@ornament-S-pad:    4em;
+.head {
+  h1, h2, h3 {
+    display: inline-block;
+  }
+}
+
+h1, h2, h3 {
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+
+  text-align: center;
+  display: block;
+}
+h1, h2 {
+  background-image: url(@big-header-ornament-left), url(@big-header-ornament-right);
+}
+h1 {
+  min-height: @ornament-L-height;
+  padding-left: @ornament-L-pad;
+  padding-right: @ornament-L-pad;
+  background-size: @ornament-L-width @ornament-L-height;
+}
+h2 {
+  min-height: @ornament-M-height;
+  padding-left: @ornament-M-pad;
+  padding-right: @ornament-M-pad;
+  background-size: @ornament-M-width @ornament-M-height;
+}
+h3 {
+  background-image: url(@small-header-ornament-left), url(@small-header-ornament-right);
+  min-height: @ornament-S-height;
+  padding-left: @ornament-S-pad;
+  padding-right: @ornament-S-pad;
+  background-size: @ornament-S-width @ornament-S-height;
 }
