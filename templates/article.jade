@@ -1,0 +1,14 @@
+extends _framework
+
+
+block head
+  script(src='src/blog.js')
+
+block body
+  .one-article
+    .head
+      h2= page._metadata.title
+    .lmeta.date
+      = page.date
+    span.text
+      != page.html
