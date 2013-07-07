@@ -8,11 +8,11 @@ block body
   each post in widx.embed(page.parent)
     if (post != page)
       .embed-article
+        .lmeta.date
+          = post.date
         .head
           h2.title
             a(href=post.url)
               = post._metadata.title
-          span.lmeta.date
-            = post.date
         span.text
           !{post.html}
