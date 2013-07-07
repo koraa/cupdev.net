@@ -22,7 +22,8 @@
       "build":      "NODE_PATH=./node_modules:src node_modules/.bin/wintersmith build",
       "preview":    "NODE_PATH=./node_modules:src node_modules/.bin/wintersmith preview",
       "test":       "NODE_PATH=./node_modules:src node_modules/.bin/wintersmith preview",
-      "clean":      "rm -Rf build"
+      "clean":      "rm -Rf build",
+      "preinstall": "sh package.d/preinstall.sh"
   },
   "devDependencies": {
     "twitter-bootstrap":      ">=2.1.1",
@@ -35,7 +36,9 @@
     "wintersmith-stylus":     ">=0.1.2",
     "wintersmith-less":       ">=0.1.0",
     "wintersmith-browserify": "git+https://github.com/mappleconfusers/wintersmith-browserify.git",
-    "wintersmith-jade":       "git+https://github.com/smebberson/wintersmith-jade.git"
+    "wintersmith-jade":       "git+https://github.com/smebberson/wintersmith-jade.git",
+    "underscore":             "*",
+    "marked":                 "*"
   },
   "keywords": [
     "website"
