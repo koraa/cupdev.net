@@ -9,5 +9,10 @@
   },
 
   "ignore": ["**.off", "**proto**", "**/_*"],
-  "require": ["coffee-script", "jquery", "httpsync", "widx"]
+  "require": {
+    "cs": "coffee-script",
+    "$":  "jquery",
+    "httpsync": "httpsync",
+    "widx": "widx"
+  }
 }
