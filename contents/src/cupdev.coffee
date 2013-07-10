@@ -7,9 +7,10 @@ P = (a...) ->
 
 $(document).ready ->
   _.map ($ '.date'), (e__) ->
-    e = $ e__
-    ds = e.html()
-    e.html (new Date e.html())
+    try
+      e = $ e__
+      ds = e.html()
+      e.html (new Date e.html())
       .toLocaleString()
     P ds, " => ", e.html()
 
