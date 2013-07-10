@@ -13,4 +13,6 @@ $(document).ready ->
       e.html (new Date e.html())
       .toLocaleString()
 
-  
+window.hi = hi
+window.P  = P
+window._  = _
