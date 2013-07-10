@@ -1,5 +1,5 @@
 {
-  "plugins": ["wintersmith-stylus", "wintersmith-less", "./node_modules/wintersmith-jade/", "wintersmith-browserify"],
+  "plugins": ["wintersmith-stylus", "wintersmith-less", "wintersmith-jade", "wintersmith-browserify"],
   "locals": {
     "url": "http://localhost:8080",
     "name": "Cupdev",
