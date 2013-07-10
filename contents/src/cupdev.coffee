@@ -12,6 +12,5 @@ $(document).ready ->
       ds = e.html()
       e.html (new Date e.html())
       .toLocaleString()
-    P ds, " => ", e.html()
 
   
