@@ -11,7 +11,7 @@ $(document).ready ->
       e = $ e__
       ds = e.html()
       e.html (new Date e.html())
-      .toLocaleString()
+        .toLocaleString()
 
 window.hi = hi
 window.P  = P
