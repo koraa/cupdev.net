@@ -30,7 +30,6 @@ If I run this on my home directory I get this:
 ```bash
 $ ls
 down  duh  files  fuu  fuubar pr0j  tmp  usr
-```
 
 $ ls | sed 'p;s/fuu/bar/'
 down
@@ -109,6 +108,7 @@ mv fuubar barbar
 Instad of using xargs you can also use a while loop;
 I use that variant to save me the trouble of dealing with escaping in xargs:
 
+```bash
 $ ls | grep 'fuu' | sed 'p;s/fuu/bar/' | while read a && read b; do echo mv "$a" "$b"; done
 mv fuu bar
 mv fuubar barbar
