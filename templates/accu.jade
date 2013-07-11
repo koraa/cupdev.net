@@ -10,9 +10,8 @@ block body
       .embed-article
         .lmeta.date
           = post.date
-        .head
-          h2.title
-            a(href=post.url)
-              = post.title
+        h2.title
+          a(href=post.url)
+            = post.title
         span.text
           !{post.html}
