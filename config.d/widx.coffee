@@ -9,7 +9,10 @@ rev = (ar) ->
   _.times ar.length, (i) ->
     ar[ar.length - 1 - i]
 
-gettags = (post) ->
+embed = (cnt) ->
+  x= _.values cnt
+  x= _.sortBy x, (art) -> art.date
+  x= rev x
 
 
 exports._ = _
