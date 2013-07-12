@@ -1,6 +1,9 @@
 _ = require 'underscore'
-_.reverse = (x) ->
-  x.reverse()
+_.mixin require 'underscore.string'
+
+P = (a...) ->
+  console.log a...
+  a[0]
 
 embed = (cnt) ->
   _.reverse \
