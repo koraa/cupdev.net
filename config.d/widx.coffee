@@ -1,5 +1,5 @@
-_ = require 'underscore'
-_.mixin require 'underscore.string'
+_  = require 'underscore'
+_s = require 'underscore.string'
 
 P = (a...) ->
   console.log a...
@@ -12,4 +12,6 @@ embed = (cnt) ->
 gettags = (post) ->
 
 
+exports._ = _
+exports._s = _s
 exports.embed = embed
