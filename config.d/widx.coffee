@@ -14,8 +14,13 @@ embed = (cnt) ->
   x= _.sortBy x, (art) -> art.date
   x= rev x
 
+wordlist = (x) ->
+  x= _s.words x, /,/
+  x= _.map x, (x) -> _s.strip x
+  x= _.filter x, (s) -> s
 
 exports._ = _
 exports._s = _s
 exports.embed = embed
+exports.wordlist = wordlist
 exports.rev = rev

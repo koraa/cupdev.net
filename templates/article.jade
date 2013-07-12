@@ -5,10 +5,14 @@ block head
   script(src='src/blog.js')
 
 block body
+
   .one-article
-    h2.title
-      = page.title
     .lmeta.date
       = page.date
+    .lmeta.tags
+      mixin rendrtags(page.metadata.tags)
+    
+    h2.title
+      = page.title
     span.text
       != page.html

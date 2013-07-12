@@ -39,7 +39,18 @@ body {
     font-size: xx-small;
     line-height: 1em;
     text-align: right;
-    
+
+    &.tags, tags {
+      ul { 
+        display: inline;
+        margin-left: 1/2em;
+      }
+      li { 
+        display: inline;
+
+        &:after { content: ", "; }
+      }
+    }
   }
 
   .text {

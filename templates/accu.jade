@@ -10,6 +10,9 @@ block body
       .embed-article
         .lmeta.date
           = post.date
+        .lmeta.tags
+          mixin rendrtags(post.metadata.tags)
+
         h2.title
           a(href=post.url)
             = post.title

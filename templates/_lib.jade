@@ -2,3 +2,10 @@ mixin GET(url)
   - if (url)
     - console.log("GET:", url)
     #{String(httpsync.get(url).end().data)}
+
+mixin rendrtags(tags)
+  | Tags:
+  ul
+    each tag in widx.wordlist(tags)
+      li
+        a(href="/search?tag=#{tag}")= tag
