@@ -49,6 +49,9 @@ body {
         display: inline;
 
         &:after { content: ", "; }
+        &:last-child:after {
+          content: "";
+        }
       }
     }
   }
