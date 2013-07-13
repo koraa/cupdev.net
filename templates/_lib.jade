@@ -18,10 +18,7 @@ mixin rendrsec(sec)
 
   | Category:
   | &nbsp;
-  - var rndrsec_itt=0;
   each dir in widx.treesec(sec)
-    if rendrsec_itt
+    if dir.depth
       | /
-    else
-      - rendrsec_itt=1;
     a(href="/search?sec=#{dir.path}")= dir.name

@@ -24,7 +24,9 @@ treesec = (x) ->
   x= _.map x, (x) -> _s.strip x
   x= _.filter x, (s)->s
   x= _.times x.length, (i) ->
-    {name: x[i], path: _s.join "/", x[..i]}
+    name: x[i]
+    path: _s.join "/", x[..i]
+    depth: i
 
 exports._ = _
 exports._s = _s
