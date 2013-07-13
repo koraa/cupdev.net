@@ -9,6 +9,8 @@ block body
   .one-article
     .lmeta.date
       = page.date
+    .lmeta.sec
+      mixin rendrsec(page.metadata.category)
     .lmeta.tags
       mixin rendrtags(page.metadata.tags)
     

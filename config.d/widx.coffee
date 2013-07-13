@@ -19,8 +19,16 @@ wordlist = (x) ->
   x= _.map x, (x) -> _s.strip x
   x= _.filter x, (s) -> s
 
+treesec = (x) ->
+  x= _s.words x, /\//
+  x= _.map x, (x) -> _s.strip x
+  x= _.filter x, (s)->s
+  x= _.times x.length, (i) ->
+    {name: x[i], path: _s.join "/", x[..i]}
+
 exports._ = _
 exports._s = _s
 exports.embed = embed
 exports.wordlist = wordlist
+exports.treesec = treesec
 exports.rev = rev

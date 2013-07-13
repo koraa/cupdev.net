@@ -9,3 +9,13 @@ mixin rendrtags(tags)
     each tag in widx.wordlist(tags)
       li
         a(href="/search?tag=#{tag}")= tag
+
+mixin rendrsec(sec)
+  | Category:
+  - var rndrsec_itt=0;
+  each dir in widx.treesec(sec)
+    if rendrsec_itt
+      | /
+    else
+      - rendrsec_itt=1;
+    a(href="/search?sec=#{dir.path}")= dir.name

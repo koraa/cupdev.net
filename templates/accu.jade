@@ -10,6 +10,8 @@ block body
       .embed-article
         .lmeta.date
           = post.date
+        .lmeta.sec
+          mixin rendrsec(post.metadata.category)
         .lmeta.tags
           mixin rendrtags(post.metadata.tags)
 
