@@ -4,14 +4,18 @@ mixin GET(url)
     #{String(httpsync.get(url).end().data)}
 
 mixin rendrtags(tags)
-  | Tags:
-  | &nbsp;
-  ul
-    each tag in widx.wordlist(tags)
-      li
-        a(href="/search?tag=#{tag}")= tag
+  if (tags)
+    | Tags:
+    | &nbsp;
+    ul
+      each tag in widx.wordlist(tags)
+        li
+          a(href="/search?tag=#{tag}")= tag
 
 mixin rendrsec(sec)
+  if !sec
+    - sec="none"
+
   | Category:
   | &nbsp;
   - var rndrsec_itt=0;
