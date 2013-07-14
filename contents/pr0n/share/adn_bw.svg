@@ -1,0 +1,20 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="5525.1" width="5493.5" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs></defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-106.68611,1638.4799)">
+  <path style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m1132.4-1588.4c-540.11,0-975.72,435.6-975.72,975.72v3473.6c0,540.11,435.6,975.72,975.72,975.72h3442.1c540.11,0,975.72-435.6,975.72-975.72v-3473.6c0-540.11-435.61-975.72-975.72-975.72z" fill-rule="nonzero" fill="#000"/>
+  <path style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m1198.3-1511.8c-498.71,0-901.91,403.19-901.91,901.91v3094.5c0,498.71,403.19,901.91,901.91,901.91h3369.3c498.71,0,901.91-403.19,901.91-901.91v-3094.5c0-498.71-403.19-901.91-901.91-901.91z" fill-rule="nonzero" fill="#fcfcfc"/>
+  <path style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m1198.3-1401.8,3369.3,0c439.68,0,791.91,352.23,791.91,791.91v3094.5c0,439.68-352.23,791.91-791.91,791.91h-3369.3c-439.68,0-791.91-352.23-791.91-791.91v-3094.5c0-439.68,352.23-791.91,791.91-791.91z" fill-rule="nonzero" stroke="#000" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="30" fill="#fcfcfc"/>
+  <path d="m2868.8-255.88-1522.8,2302.6,301.03,0,356.59-521.44,1727.3,0,357.78,521.44,327.5,0-1547.5-2302.6zm0,493.94,670.28,987.97-1345.5,0,675.22-987.97z" fill-opacity="0" stroke="#000" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="30"/>
+  <path d="m2868.8-346.6-1522.8,2302.6,301.03,0,356.59-521.44,1727.3,0,357.78,521.44,327.5,0-1547.5-2302.6zm0,493.94,670.28,987.97-1345.5,0,675.22-987.97z" fill="#000"/>
+ </g>
+</svg>

@@ -1,0 +1,37 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="5525.1" width="5493.5" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="linearGradient5148" y2="3818.1" gradientUnits="userSpaceOnUse" x2="1334.4" gradientTransform="translate(11.667963,0)" y1="-1580.9" x1="1334.4">
+   <stop stop-color="#BBB" offset="0"/>
+   <stop stop-color="#BBB" offset="0.77767"/>
+   <stop stop-color="#343434" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient5181" y2="3483.6" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="2847.9" gradientTransform="translate(26.516504,0)" y1="3483.6" x1="228.12">
+   <stop stop-color="#8e8e8e" offset="0"/>
+   <stop stop-color="#b3b3b3" offset="0.17857"/>
+   <stop stop-color="#b3b3b3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient5189" y2="3252.5" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="5442.1" gradientTransform="translate(26.516504,0)" y1="3252.5" x1="211.77">
+   <stop stop-color="#BBB" stop-opacity="0" offset="0"/>
+   <stop stop-color="#BBB" offset="0.16785"/>
+   <stop stop-color="#BBB" offset="0.83432"/>
+   <stop stop-color="#BBB" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-106.68611,1638.4799)">
+  <rect stroke-dasharray="none" ry="950.66" height="5374.9" width="5343.4" stroke="#efefef" stroke-miterlimit="4" y="-1563.4" x="181.75" stroke-width="50.107" fill="url(#linearGradient5148)"/>
+  <rect stroke-dasharray="none" ry="846.92" height="4788.4" width="5063.1" stroke="#fcfcfc" stroke-miterlimit="4" y="-1456.8" x="351.37" stroke-width="110" fill="#efefef"/>
+  <path fill="#d8d8d8" d="m2868.8-255.97-1522.8,2302.6,301.03,0,356.59-521.44,1727.3,0,357.78,521.44,327.5,0-1547.5-2302.6zm0,493.94,670.28,987.97-1345.5,0,675.22-987.97z"/>
+  <path fill="#4a484c" d="m2868.8-346.69-1522.8,2302.6,301.03,0,356.59-521.44,1727.3,0,357.78,521.44,327.5,0-1547.5-2302.6zm0,493.94,670.28,987.97-1345.5,0,675.22-987.97z"/>
+  <path stroke-linejoin="miter" d="m264.14,2805.7s20.734,335.68,269.22,624.96c248.48,289.29,827.56,268.34,827.56,268.34h1521.1,1521.1s560.36,20.942,808.84-268.34c248.48-289.29,249.24-620.54,249.24-620.54s-142.66,306.9-377.3,455.08-680.78,127.66-680.78,127.66h-1521.1-1521.1s-446.14,20.528-680.78-127.66c-234.64-148.18-416-459.5-416-459.5z" stroke="url(#linearGradient5189)" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="51.70000076" fill="url(#linearGradient5181)"/>
+ </g>
+</svg>
