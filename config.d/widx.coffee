@@ -31,6 +31,8 @@ tokenize = (l) ->
 
 embed = (cnt) ->
   x= _.values cnt
+  x= _.reject x, (e) ->
+    _.contains (tokenize e.metadata.flags), "meta"
   x= _.sortBy x, (art) -> art.date
   x= rev x
 
