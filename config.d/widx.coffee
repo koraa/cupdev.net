@@ -9,6 +9,26 @@ rev = (ar) ->
   _.times ar.length, (i) ->
     ar[ar.length - 1 - i]
 
+castarray = (x) ->
+  if _.isArray x
+    x
+  else
+    r = _.toArray x
+    if r
+      r
+    else
+      [x]
+
+tokenize = (l) ->
+  if _.isArray l
+    a = l
+  else if _.isString l
+    return wordlist l
+  else
+    a = castarray l
+
+  _.map x, (x) -> _s.strip x
+
 embed = (cnt) ->
   x= _.values cnt
   x= _.sortBy x, (art) -> art.date
