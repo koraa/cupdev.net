@@ -1,8 +1,12 @@
 .navbar.navbar-inverse.navbar-static-top
     .navbar-inner
-      a(href="/").brand Cupdev
       ul.nav
+        li: a(href="/").brand Cupdev
         li: a(href="/blog/")     Blog
         li: a(href="/projects/") Projects
         li: a(href="/about/")    About Me
         li: a(href="/links/")    Links
+        li.right: a(href="/feed/std.xml")
+          .icons.white#rss
+          span
+            | RSS
