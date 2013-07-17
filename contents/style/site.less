@@ -183,3 +183,29 @@ h3 {
     height: 20px;
   }
 }
+
+.betabar {
+  font-family: @sansFontFamily; 
+
+  width: 100%;
+  padding: 0.4em;
+  font-size: x-large;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 2px #300;
+  color: #FF1;
+  border: 1px solid #300;
+
+  .bg-stripes(@color1: #F90, @color2: #F30, @size: 60px, @blend: 1);
+
+  &:before {
+    content: "";
+    #gradient > .vertical(rgba(0,0,0,0.0),rgba(0,0,0,0.32));
+    position: absolute;
+    top:    (0);
+    bottom: (0);
+    left:   (0);
+    right:  (0);
+    z-index: +10;
+  }
+}
