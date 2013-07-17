@@ -4,8 +4,6 @@
 ## TODO
 
 * Add black ornaments to about
-* Link to RSS feeds
-* Link to Nachtsschmoker
 * Index & Search
 * Style links page
 * Add photo
