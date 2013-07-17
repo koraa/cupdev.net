@@ -15,7 +15,9 @@ rss(version='2.0',
     //pubDate= articles[0].rfc822date
     generator Cupdev Website - http://cupdev.net
     language en
-    for article in widx.embed([contents.blog, contents.projects])
+    - var targ = page.metadata.target
+    - if (!targ) targ = page.parent
+    for article in widx.embed(targ, contents)
       - var permalink = locals.url + article.url
       item
         title= article.title
