@@ -29,11 +29,24 @@ tokenize = (l) ->
 
   _.map a, (x) -> _s.strip x
 
-embed = (cnt) ->
-  x= _.values cnt
-  x= _.reject x, (e) ->
+
+# 
+# Take a node from the ContentTree
+# and check it it is a file
+treefile = (n) ->
+  n.__filename
+
+embed = (x) ->
+  x= castarray x         # Handle non-array args x -> [x]
+  x= _.map x, (e) ->     # Extract all files
+    return [e] if treefile e
+    _.values e
+  x= _.flatten x, true    # Vectorize
+  x= _.reject x, (e) ->   # Reject meta contents
     _.contains (tokenize e.metadata.flags), "meta"
-  x= _.sortBy x, (art) -> art.date
+  x= _.sortBy x, (art) -> # Sort by date
+    art.date
+  x= _.uniq x, true       # Remove duplicates
   x= rev x
 
 wordlist = (x) ->
