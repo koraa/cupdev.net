@@ -1,5 +1,5 @@
 ---
 template: 'feed.jade'
-filename: 'rss.xml'
+filename: 'std.xml'
 flags: ['meta']
 ---
