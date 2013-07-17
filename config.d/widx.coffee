@@ -27,7 +27,7 @@ tokenize = (l) ->
   else
     a = castarray l
 
-  _.map x, (x) -> _s.strip x
+  _.map a, (x) -> _s.strip x
 
 embed = (cnt) ->
   x= _.values cnt
