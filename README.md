@@ -1,18 +1,18 @@
 # Cupdev.net
-(My website)
+(Messia of multiple religions)
 
 ## TODO
 
-* Fix my name
 * Add black ornaments to about
 * Link to RSS feeds
 * Link to Nachtsschmoker
 * Index & Search
 * Style links page
-* Add ühoto
+* Add photo
 
 ### Feature Requests
 
+* Embed twitter/ADN/...
 * Tumbleblog
     * Sync to soup
     * Sync to tumblr
