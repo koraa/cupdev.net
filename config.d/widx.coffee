@@ -36,17 +36,34 @@ tokenize = (l) ->
 treefile = (n) ->
   n.__filename
 
-embed = (x) ->
+
+#
+# Traverse dict by path:
+# Takes a path as array or unix-format
+# and returns the element in a tree
+#
+traverse = (d,p) ->
+  if _.isString p
+    p = _.map (_s.words p, "/"), (s) -> _s.strip s
+
+  if p.length < 1
+    return d
+  traverse d[_.head p], _.tail p
+  
+embed = (x, root) ->
   x= castarray x         # Handle non-array args x -> [x]
   x= _.map x, (e) ->     # Extract all files
-    return [e] if treefile e
-    _.values e
-  x= _.flatten x, true    # Vectorize
-  x= _.reject x, (e) ->   # Reject meta contents
+    if _.isString e        # Handle string args
+      e = traverse root, e
+    if treefile e          # Handle Files
+      return [e]
+    _.values e             # Handle dirs
+  x= _.flatten x, true   # Vectorize
+  x= _.reject x, (e) ->  # Reject meta contents
     _.contains (tokenize e.metadata.flags), "meta"
-  x= _.sortBy x, (art) -> # Sort by date
+  x= _.sortBy x, (art) -># Sort by date
     art.date
-  x= _.uniq x, true       # Remove duplicates
+  x= _.uniq x, true      # Remove duplicates
   x= rev x
 
 wordlist = (x) ->
