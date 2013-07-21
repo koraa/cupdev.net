@@ -20,9 +20,9 @@
   },
   "scripts": {
       "build":      "NODE_PATH=./node_modules:config.d node_modules/.bin/wintersmith build",
-      "preview":    "NODE_PATH=./node_modules:config.d node_modules/.bin/wintersmith preview",
-      "test":       "NODE_PATH=./node_modules:config.d node_modules/.bin/wintersmith preview",
       "clean":      "rm -Rf build",
+      "preview":    "sh package.d/test.sh",
+      "test":       "sh package.d/test.sh",
       "preinstall": "sh package.d/preinstall.sh"
   },
   "devDependencies": {
