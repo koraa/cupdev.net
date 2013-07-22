@@ -97,3 +97,4 @@ exports.wordlist = wordlist
 exports.treesec = treesec
 exports.rev = rev
 exports.flatfiles = flatfiles
+exports.tokenize = tokenize
