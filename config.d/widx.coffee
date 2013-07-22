@@ -66,6 +66,16 @@ embed = (x, root) ->
   x= _.uniq x, true      # Remove duplicates
   x= rev x
 
+flatfiles = (x,root) ->
+  x= castarray x         # Handle non-array args x -> [x]
+  x= _.map x, (e) ->     # Extract all files
+    if _.isString e        # Handle string args
+      e = traverse root, e
+    if treefile e          # Handle Files
+      return [e]
+    _.values e             # Handle dirs
+  x= _.flatten x, true   # Vectorize
+
 wordlist = (x) ->
   x= _s.words x, /,/
   x= _.map x, (x) -> _s.strip x
@@ -86,3 +96,4 @@ exports.embed = embed
 exports.wordlist = wordlist
 exports.treesec = treesec
 exports.rev = rev
+exports.flatfiles = flatfiles
