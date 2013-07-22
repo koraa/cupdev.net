@@ -16,8 +16,7 @@ module.exports = (env, callback) ->
           callback er
 
   CDataPlugin.fromFile = (filepath, callback) ->
-    callback null,
-      new CDataPlugin filepath
+    callback null, new CDataPlugin filepath
 
   env.registerContentPlugin 'data', '**/*.json.coffee', CDataPlugin
   callback()
