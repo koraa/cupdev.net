@@ -9,6 +9,8 @@ module.exports = (env, callback) ->
         try
           d = require @filepath.full
           t = JSON.stringify d
+          t='' if !t # Default case
+
           callback null, new Buffer t
         catch er
           callback er
