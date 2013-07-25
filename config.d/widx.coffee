@@ -19,6 +19,25 @@ castarray = (x) ->
     else
       [x]
 
+tree_mknode = (tree, path__, newn=(->{})) ->
+  wp = tokenize path__, '/'
+  sp = _.tail wp
+  node = _.head wp
+  
+  if node && !tree[node]
+    tree[node] = newn()
+
+  if _.isEmpty wp
+    return tree
+
+  tree_mknode tree[node], sp, newn
+
+tree_set = (tree,path__,value) ->
+  path = tokenize path__, '/'
+
+  dir = tree_mknode tree, (_.initial path)
+  dir[_.last path] = value
+
 tokenize = (l,sep=null) ->
   if _.isArray l
     a = l
@@ -99,3 +118,5 @@ exports.treesec = treesec
 exports.rev = rev
 exports.flatfiles = flatfiles
 exports.tokenize = tokenize
+exports.tree_set = tree_set
+exports.tree_mknode = tree_mknode
