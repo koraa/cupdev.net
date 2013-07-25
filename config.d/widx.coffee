@@ -19,11 +19,11 @@ castarray = (x) ->
     else
       [x]
 
-tokenize = (l) ->
+tokenize = (l,sep=null) ->
   if _.isArray l
     a = l
   else if _.isString l
-    return wordlist l
+    return wordlist l, sep
   else
     a = castarray l
 
@@ -76,8 +76,8 @@ flatfiles = (x,root) ->
     _.values e             # Handle dirs
   x= _.flatten x, true   # Vectorize
 
-wordlist = (x) ->
-  x= _s.words x, /,/
+wordlist = (x,sep=',') ->
+  x= _s.words x, sep
   x= _.map x, (x) -> _s.strip x
   x= _.filter x, (s) -> s
 
