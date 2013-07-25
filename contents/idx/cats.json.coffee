@@ -25,7 +25,6 @@ x_= _.flatten x_, true
 
 data = {}
 _.each x_, (e) ->
-  w.P "each", e
   ar = w.tree_set data, (_.concat e.cat, '__urls'), []
   ar.push e.url
 
