@@ -92,6 +92,7 @@ treesec = (x) ->
 
 exports._ = _
 exports._s = _s
+exports.P  = P
 exports.embed = embed
 exports.wordlist = wordlist
 exports.treesec = treesec
