@@ -11,7 +11,8 @@ arts = w.flatfiles [c.about, c.blog, c.projects]
 
 d = {}
 _.each arts, (a) ->
-  tok= tt.fromString a.html
+  tok= a.html + ' ' + a.title
+  tok= tt.fromString tok
   tok= _s.words tok, /\W/
   tok= _.filter tok, (x) -> x
   tok= _.map tok, (s) ->
