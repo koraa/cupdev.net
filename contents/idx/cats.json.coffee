@@ -13,7 +13,9 @@ prefixes =
 # TO format:
 # [{cat: [$root, $1level, $2level], url: $url},...]
 x_= for pre__,files of prefixes
-  pre = w.tokenize pre__, '/'
+  pre= pre__.toLocaleLowerCase()
+  pre= w.tokenize pre__, '/'
+
   _.map files, (f) ->
     cat: _.concat \
       pre,

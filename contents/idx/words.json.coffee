@@ -14,6 +14,8 @@ _.each arts, (a) ->
   tok= tt.fromString a.html
   tok= _s.words tok, /\W/
   tok= _.filter tok, (x) -> x
+  tok= _.map tok, (s) ->
+    s.toLocaleLowerCase()
 
   # Count each token
   dsub = {}

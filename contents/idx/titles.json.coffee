@@ -3,6 +3,6 @@ w = require 'widx'
 c = contents
 
 _.map (w.flatfiles [c.about, c.blog, c.projects]), (art) ->
-  title: art.title
+  title: art.title.toLocaleLowerCase()
   url:   art.url
 

@@ -9,6 +9,8 @@ dict = {}
 _.each flat, (f) ->
   tags = w.tokenize f.metadata.tags # Get tags
   tags = ["none"] if tags.length < 1
+  tags = _.map tags, (s) ->
+    s.toLocaleLowerCase()
 
   _.each tags, (t) ->
     dict[t]=[] if !dict[t] # Default entry
