@@ -53,8 +53,7 @@ tokenize = (l,sep=null) ->
 # Take a node from the ContentTree
 # and check it it is a file
 treefile = (n) ->
-  n.__filename
-
+  n && n.__filename
 
 #
 # Traverse dict by path:
