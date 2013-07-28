@@ -13,8 +13,7 @@ d = {}
 _.each arts, (a) ->
   tok= a.html + ' ' + a.title
   tok= tt.fromString tok
-  tok= _s.words tok, /\W/
-  tok= _.filter tok, (x) -> x
+  tok= w.tokenize tok, /\W/
   tok= _.map tok, (s) ->
     s.toLocaleLowerCase()
 
