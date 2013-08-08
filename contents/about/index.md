@@ -1,4 +1,7 @@
---- title: About Me template: article.jade ---
+---
+title: About Me
+template: article.jade
+---
 
 Hi,  I am Karolin Varner
 
