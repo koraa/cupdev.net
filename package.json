@@ -1,11 +1,11 @@
 {
   "name": "cupdev.net",
-  "description": "Website of Michael Varner",
+  "description": "Website of Karolin Varner",
   "version": "0.0.1",
-  "url": "http://cupdev.net",
+  "url": "https://cupdev.net",
   "homepage": "https://cupdev.net",
   "author": {
-    "name": "Michael Varner",
+    "name": "Karolin Varner",
     "email": "webmaster@cupdev.net"
   },
   "repository": {
