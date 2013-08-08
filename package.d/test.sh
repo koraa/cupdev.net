@@ -28,4 +28,6 @@ watchr() {
 ################################
 ## MAIN
 
-watchr 'NODE_PATH=./node_modules:config.d node_modules/.bin/wintersmith preview' -r config* -e modify,create,delete,delete_self,unmount,move,move_self
+watchr 'wintersmith preview' \
+  -r config*                 \
+  -e modify,create,delete,delete_self,unmount,move,move_self
