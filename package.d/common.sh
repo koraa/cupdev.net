@@ -58,3 +58,15 @@ mkcd() {
     cd "$1"
 }
 
+################### Enviroment #######################
+
+exx PATH <<< '
+  node_modules/.bin
+'
+
+exx NODE_PATH <<< '
+  ./node_modules
+  ./config.d/
+  ./cnt/src
+  ./cnt/src/__proto
+'
