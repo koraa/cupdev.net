@@ -17,3 +17,5 @@
 * Port to couchdb
 * Sticky flag
 * Add JS/experiments/games
+* Add Font Customn
+  * Insert header ornaments with this
