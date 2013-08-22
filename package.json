@@ -37,8 +37,7 @@
     "wintersmith-less":       ">=0.1.0",
     "underscore":             "*",
     "marked":                 "*",
-    "jquery-browserify":      "*",
-    "underscore.string":      "*"
+    "jquery-browserify":      "*"
   },
   "keywords": [
     "website"

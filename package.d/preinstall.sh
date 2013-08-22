@@ -16,9 +16,11 @@ mkdir -p "$libs" "$meta"
   git clone --depth 1 "https://github.com/jnordberg/wintersmith-browserify.git" wintersmith-browserify
   git clone --depth 1 "https://github.com/smebberson/wintersmith-jade.git" wintersmith-jade
   git clone --depth 1 "https://github.com/isagalaev/highlight.js.git" highlight.js
+  git clone --depth 1 "https://github.com/epeli/underscore.string.git" underscore.string
 
   cd "$pkgrt"
   npm install "$meta/twitter-bootstrap"
   npm install "$meta/wintersmith-browserify"
   npm install "$meta/wintersmith-jade"
+  npm install "$meta/underscore.string"
 )
