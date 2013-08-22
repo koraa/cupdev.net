@@ -65,8 +65,8 @@ exx PATH <<< '
 '
 
 exx NODE_PATH <<< '
-  ./node_modules
+  ./node_modules/
   ./config.d/
-  ./cnt/src
-  ./cnt/src/__proto
+  ./cnt/src/
+  ./cnt/src/__proto/
 '
