@@ -1,5 +1,8 @@
 #! /bin/bash
 
+dir="`dirname "$0"`"
+. "$dir/lib/std.sh"
+
 ################### Settings #########################
 
 pkgrt="`readlink -f .`"
