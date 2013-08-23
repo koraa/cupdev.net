@@ -10,10 +10,18 @@ meta="$libs/__meta" # TODO: Rename to libs_meta
 ################### Functions ########################
 
 #
+# Echo to stderr
+debg() {
+  echo "[DEBUG] $@" >&2
+}
+
+
+
+#
 # Set by reference
 # Invoke Rset [varname] [value]
 Rset() {
-  echo >&2 "rset ($0 | $1, $2, $3)"
+  debg "rset ($0 | $1, $2, $3)"
   eval "$1='$2'"
 }
 
@@ -22,7 +30,7 @@ Rset() {
 # while implementing linewise-tokens
 # Stripping can  be suppressed with colons
 exx() {
-  echo >&2 "rxx ($0 | $1, $2, $3)"
+  debg "rxx ($0 | $1, $2, $3)"
   local ref OL NU filter
  
   filter='
@@ -50,7 +58,7 @@ exx() {
   export "$ref"
   
   # DEBUG
-  echo >&2 "Extend env: ${ref}=${!ref}"
+  debg "Extend env: ${ref}=${!ref}"
 }
 
 mkcd() {
