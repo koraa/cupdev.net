@@ -8,6 +8,7 @@
 * Style links page
 * Add photo
 * Clean up icons
+* Departmentalize install scripts
 
 ### Feature Requests
 
