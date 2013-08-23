@@ -1,5 +1,6 @@
 $ = require 'jquery-browserify'
 _ = require 'underscore'
+search = require './__proto/search.coffee'
 
 P = (a...) ->
   console.log a...
@@ -17,6 +18,10 @@ $(document).ready ->
     e = $ e__
     e.wrap '<div class="ornwrap">'
 
-window.hi = hi
 window.P  = P
 window._  = _
+window.$  = $
+window.search = search
+
+window.as = require 'async'
+
