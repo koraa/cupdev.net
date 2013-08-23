@@ -4,7 +4,7 @@
 
 pkgrt="`readlink -f .`"
 libs="$pkgrt/node_modules"
-meta="$libs/__meta"
+meta="$libs/__meta" # TODO: Rename to libs_meta
 
 
 ################### Functions ########################

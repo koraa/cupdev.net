@@ -10,6 +10,22 @@ mkdir -p "$libs" "$meta"
 # These are installed here in order to do shallow
 # clones instad of full ones, thereby accellerating
 # thereby install process enormously
+
+wgit-clone() {
+
+}
+
+wgit-up() {
+
+}
+
+#
+# Git wrapper: Make shure the given repo is
+# cloned, installed and up-to-date.
+wgit() {
+  local url="$1" dir="$2"
+}
+
 (
   cd "$meta"
   git clone --depth 1 "https://github.com/twitter/bootstrap.git" twitter-bootstrap
