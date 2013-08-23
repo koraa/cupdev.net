@@ -7,6 +7,7 @@
 * Index & Search
 * Style links page
 * Add photo
+* Clean up icons
 
 ### Feature Requests
 
