@@ -8,6 +8,7 @@
 * Style links page
 * Add photo
 * Clean up icons
+* Decide for _either_ CamelCase or underscore_case
 
 ### Feature Requests
 
