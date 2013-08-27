@@ -60,13 +60,21 @@ treefile = (n) ->
 # Takes a path as array or unix-format
 # and returns the element in a tree
 #
+# If the element does not exist exist
+# the function will just return null or
+# undefined without throwing an error.
+#
+# TODO: exists method
+# TODO: Include lib?
 traverse = (d,p) ->
-  if _.isString p
+  if _.isString p # TODO: TOKENIZE?
     p = _.map (_s.words p, "/"), (s) -> _s.strip s
 
   if p.length < 1
     return d
-  traverse d[_.head p], _.tail p
+
+  if d
+    traverse d[_.head p], _.tail p
   
 embed = (x, root) ->
   x= castarray x         # Handle non-array args x -> [x]
