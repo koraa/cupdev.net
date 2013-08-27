@@ -12,6 +12,25 @@ mapply = (argvv, f) ->
     f args...
 
 #
+# Replacement for mapply as a modifier
+# Takes a function and modifies it so,
+# that it takes an array for it's list of arguments.
+# TODO: underscore?
+vecarg = (f) ->
+  (a) ->
+    f a...
+
+# 
+# The opposite of vecarg:
+# Takes a function and modifies it so,
+# that it recievs it's arguments as an
+# array
+# TODO: underscore?
+variad = (f) ->
+  (a...) ->
+    f a
+
+#
 # Join multiple dicts (objects).
 # The returned value is a completely new array.
 #
