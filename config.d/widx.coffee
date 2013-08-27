@@ -177,14 +177,20 @@ treesec = (x) ->
     path: _s.join "/", x[..i]
     depth: i
 
-exports._ = _
-exports._s = _s
-exports.P  = P
-exports.embed = embed
-exports.wordlist = wordlist
-exports.treesec = treesec
-exports.rev = rev
-exports.flatfiles = flatfiles
-exports.tokenize = tokenize
-exports.tree_set = tree_set
-exports.tree_mknode = tree_mknode
+module.exports =
+  _:  _
+  _s: _s
+  P:  P
+  rev: rev
+  embed:    embed
+  wordlist: wordlist
+  treesec:  treesec
+  flatfiles: flatfiles
+  tokenize: tokenize
+  tree_set: tree_set
+  tree_mknode: tree_mknode
+  mapply: mapply
+  joinD: joinD
+  mapD: mapD
+  filterD: filterD
+  traverse: traverse
