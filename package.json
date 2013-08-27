@@ -37,7 +37,9 @@
     "wintersmith-less":       ">=0.1.0",
     "underscore":             "*",
     "marked":                 "*",
-    "jquery-browserify":      "*"
+    "jquery-browserify":      "*",
+    "svgo":                   "*",
+    "canvg":                  "*"
   },
   "keywords": [
     "website"
