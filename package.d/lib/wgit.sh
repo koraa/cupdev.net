@@ -1,4 +1,5 @@
 #!/bin/echo You shall not invoke!
+# TODO: More generic name
 
 # $ libmeta_install [name]
 #
