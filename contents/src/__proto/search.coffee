@@ -7,35 +7,6 @@ window._s = _s
 asset = require './asset.coffee'
 w = require './widx.coffee'
 
-#
-# Map, but expects a nested list.
-# Each sublist will be passed to the
-# function as parameters.
-#
-# TODO: Merge with underscore?
-mapply = (argvv, f) ->
-  _.map argvv,(args) ->
-    f args...
-
-#
-# Join multiple dicts (objects).
-# The returned value is a completely new array.
-#
-# TODO: Merge with underscore?
-joinD = (a...) ->
-  _.extend {}, _.flatten a
-
-# Map on a dictionary.
-# Takes a dict and a function 'f(key, value, store)'
-# where store is the target dict
-# returns oneother dict.
-# Each invocation of 'f' must return a dict itself.
-# TODO: Merge with underscore?
-mapD = (dic, f) ->
-  joinD \
-    mapply (_.pairs dic), f
-
-
 getidx = (callb) ->
   as.parallel [
       ((c)-> asset 'cats', (a...) -> c null, a...  ), # TODO: Cache function? Use functional lib to curry
