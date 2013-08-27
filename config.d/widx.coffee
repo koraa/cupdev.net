@@ -7,6 +7,7 @@ _s = require 'underscore.string'
 # function as parameters.
 #
 # TODO: Merge with underscore?
+# TODO: Might be better as function modifier 'apply'
 mapply = (argvv, f) ->
   _.map argvv,(args) ->
     f args...
@@ -47,6 +48,19 @@ joinD = (a...) ->
 mapD = (dic, f) ->
   joinD \
     mapply (_.pairs dic), f
+
+# Filter a Dictionary.
+# TODO: Merge with underscore?
+filterD = (dic,f) ->
+  joinD filter (_.pairs dic), vecarg f
+
+#
+# Filter a dictionary,
+# but include the pair
+# if the test evaluates false.
+# TODO: underscore?
+rejectD = (dic,f) ->
+  filterD dic, (a...) -> !f a...
 
 P = (a...) ->
   console.log a...
