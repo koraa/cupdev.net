@@ -2,6 +2,14 @@ _  = require 'underscore'
 _s = require 'underscore.string'
 
 #
+# Pseudo Y Combinator
+# Mutates a function so that it's first argument will be itself.
+# Useful for anonymous recusion
+Y = (f) ->
+  (a...) ->
+    f (Y f), a...
+
+#
 # Map, but expects a nested list.
 # Each sublist will be passed to the
 # function as parameters.
@@ -62,6 +70,41 @@ filterD = (dic,f) ->
 rejectD = (dic,f) ->
   filterD dic, (a...) -> !f a...
 
+#
+# Wrapper to get the length of something
+len = (o) -> o.length
+
+# Takes an array of indices and
+# one array of values and creates
+# a third array which contains at pos n
+# the value for values[indices[n]
+#
+# $ att [3,2,4,2,1], ['aa', 'b', 'c', 'd', 'e', null, null]
+# => ['d', 'c','e','c','b']
+att = (idxv, valv) ->
+  P "att:", idxv, valv
+  _.map idxv, (i) ->
+    valv[i]
+
+# Takes an (flat) array and
+# creates a nested array with n
+# elements in each chunk
+chunkify = (a, n=2) ->
+  _.map (_.range 0, (len a), n), (beg) ->
+    att (_.range beg, beg+n), a
+
+# Takes key-value pairs and turns them into a dict
+fromPairs = (pairs) ->
+  r={}
+  _.each pairs, vecarg (k,v) ->
+    r[k]=v
+  r
+
+# Same as fromPairs but takes a 'stream' rather than a set of pairs
+# (Dic key1, value1, key2, …) rather than fromPairs [[key1, value1], [key2, value2], …]
+Dic = (a...) ->
+  fromPairs (chunkify a)
+
 P = (a...) ->
   console.log a...
   a[0]
@@ -69,6 +112,11 @@ P = (a...) ->
 rev = (ar) ->
   _.times ar.length, (i) ->
     ar[ar.length - 1 - i]
+
+#
+# Contcats all given args to an array
+conc = (a...) ->
+  [].concat a
 
 castarray = (x) ->
   if _.isArray x
@@ -194,3 +242,10 @@ module.exports =
   mapD: mapD
   filterD: filterD
   traverse: traverse
+  Y: Y
+  len: len
+  att: att
+  chunkify: chunkify
+  Dic: Dic
+  fromPairs: fromPairs
+  conc: conc
