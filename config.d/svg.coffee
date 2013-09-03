@@ -6,6 +6,7 @@ svgo   = new (require 'svgo')
 Canvas = require 'canvas'
 canvg  = require 'canvg'
 w      = require 'widx'
+less   = require 'less'
 
 module.exports = (env, bigCallbackTheory) ->
 
@@ -53,9 +54,10 @@ module.exports = (env, bigCallbackTheory) ->
     constructor: (@filepath)->
       @toSVG  = new SVGPluginSVG @filepath, @
       @toPNG  = new SVGPluginPNG @filepath, @
-      @toLESS = new SVGPluginLESS @filepath, @
-
-      @plugins = [@toSVG, @toPNG, @toLESS]
+      @plugins = [@toSVG, @toPNG]
+      
+      # Init less params
+      @writeLessParams()
 
     getCnt: (callb) ->
       if @cache
@@ -67,6 +69,33 @@ module.exports = (env, bigCallbackTheory) ->
           return
         @cache = String cnt
         callb null, @cache
+
+    getLessParams: (cnt, callb) ->
+      tis=@
+      @toSVG.getInfo (er, info) -> # TODO: Implement a 'hope' function for less 'if er's
+        if er
+          callb er, null
+          return
+
+        basen = path.basename \
+          tis.filepath.relative.replace /\.svg$/, ''
+
+        callb null, w.Dic \
+          "img_#{basen}",       ( "/" + tis.toSVG.getFilename() ),
+          "img_#{basen}_alt",   ( "/" + tis.toPNG.getFilename() ),
+          "img_#{basen}_w",     ( new less.tree.Dimension info.width ),
+          "img_#{basen}_h",     ( new less.tree.Dimension info.height ),
+          "img_#{basen}_ratio", ( new less.tree.Dimension (info.height/info.width) )
+
+    # Store the variables
+    writeLessParams: (cnt, callb) ->
+      @getLessParams cnt, (er, params) ->
+        if er
+          callb er, null
+          return
+        w.P "WRITE LESS PARAMS: ", params
+
+        _.extend (w.tree_mknode env, 'config/less/vars'), params
 
   ####################################
 
@@ -103,28 +132,6 @@ module.exports = (env, bigCallbackTheory) ->
               callb er, null
               return
             callb null, buf
-
-  ######################################
-  
-  class SVGPluginLESS extends HubeDubDub
-    # How do we get this to be included instead?
-    getFilename: -> @filepath.relative.replace /\.svg$/, '.less'
-    nocache_transform: (cnt, callb) ->
-      tis=@
-      @hub.toSVG.getInfo (er, info) -> # TODO: Implement a 'hope' function for less 'if er's
-        if er
-          callb er, null
-          return
-
-        basen = path.basename \
-          tis.filepath.relative.replace /\.svg$/, ''
-
-        callb null, """
-          @img_#{basen}:     "#{tis.hub.toSVG.getFilename()}";
-          @img_#{basen}.alt: "#{tis.hub.toPNG.getFilename()}";
-          @img_#{basen}_w:   "#{info.width}";
-          @img_#{basen}_h:   "#{info.heigh}";
-        """
 
   #####################################
   
