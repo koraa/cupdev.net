@@ -34,12 +34,12 @@
     "httpsync":               ">=0.0.6",
     "wintersmith":            ">=1.2.2",
     "wintersmith-stylus":     ">=0.1.2",
-    "wintersmith-less":       ">=0.1.0",
     "underscore":             "*",
     "marked":                 "*",
     "jquery-browserify":      "*",
     "svgo":                   "*",
-    "canvg":                  "*"
+    "canvg":                  "*",
+    "less":                   "*"
   },
   "keywords": [
     "website"
