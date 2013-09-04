@@ -1,15 +1,19 @@
-.navbar.navbar-inverse.navbar-static-top
-    .navbar-inner
-      ul.nav
-        li: a(href="/").brand Cupdev
-        li: a(href="/blog/")     Blog
-        li: a(href="/projects/") Projects
-        li: a(href="/about/")    About Me
-        li: a(href="/links/")    Links
+nav.navbar.navbar-inverse.navbar-static-top(role="navigation")
+  .navbar-header
+    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    li: a(href="/").navbar-brand Cupdev
 
-        li.right: a(href="/feed/std.xml")
-          .icons.white#rss
-          span
-            | RSS
-        li.right: a(href="https://nachtschmoker.org")
-          | ➤&nbsp;Podcast
+  .collapse.navbar-collapse.navbar-ex1-collapse
+    ul.nav.navbar-nav
+      li: a(href="/blog/")     Blog
+      li: a(href="/projects/") Projects
+      li: a(href="/about/")    About Me
+      li: a(href="/links/")    Links
+
+    ul.nav.navbar-nav.navbar-right
+      li: a(href="/feed/std.xml") RSS
+      li: a(href="https://nachtschmoker.org") ➤&nbsp;Podcast
