@@ -93,7 +93,6 @@ module.exports = (env, bigCallbackTheory) ->
         if er
           callb er, null
           return
-        w.P "WRITE LESS PARAMS: ", params
 
         _.extend (w.tree_mknode env, 'config/less/vars'), params
 

@@ -82,7 +82,6 @@ len = (o) -> o.length
 # $ att [3,2,4,2,1], ['aa', 'b', 'c', 'd', 'e', null, null]
 # => ['d', 'c','e','c','b']
 att = (idxv, valv) ->
-  P "att:", idxv, valv
   _.map idxv, (i) ->
     valv[i]
 
