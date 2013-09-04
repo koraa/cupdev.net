@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+# Simple wrapper around the python command that
+# alows setting the python executable with an
+# enviroment variable and defaults to python 2.
+
+test -n "$PYTHON_EXE" || PYTHON_EXE=python2
+"$PYTHON_EXE" "$@"
