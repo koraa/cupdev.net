@@ -12,6 +12,7 @@ meta="$libs/__meta" # TODO: Rename to libs_meta
 ################### Enviroment #######################
 
 exx PATH <<< '
+  package.d/bin
   node_modules/.bin
 '
 
