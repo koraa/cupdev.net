@@ -2,6 +2,9 @@ $ = require 'jquery-browserify'
 _ = require 'underscore'
 search = require './__proto/search.coffee'
 
+require 'bootstrap/js/transition'
+require 'bootstrap/js/collapse'
+
 P = (a...) ->
   console.log a...
   return _.last a
