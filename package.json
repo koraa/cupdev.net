@@ -24,6 +24,7 @@
       "preview":    "sh package.d/test.sh",
       "test":       "sh package.d/test.sh",
       "console":    "sh package.d/console.sh",
+      "sh":         "sh package.d/shell.sh",
       "preinstall": "sh package.d/preinstall.sh"
   },
   "devDependencies": {
