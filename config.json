@@ -17,5 +17,9 @@
     "$":  "jquery",
     "httpsync": "httpsync",
     "widx": "widx"
+  },
+
+  "less": {
+    "paths": ["node_modules"]
   }
 }
