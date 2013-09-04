@@ -11,14 +11,14 @@ meta="$libs/__meta" # TODO: Rename to libs_meta
 
 ################### Enviroment #######################
 
-exx PATH <<< '
-  package.d/bin
-  node_modules/.bin
-'
+exx PATH <<< "
+  ${PWD}/package.d/bin
+  ${PWD}/node_modules/.bin
+"
 
-exx NODE_PATH <<< '
-  ./node_modules/
-  ./config.d/
-  ./cnt/src/
-  ./cnt/src/__proto/
-'
+exx NODE_PATH <<< "
+  ${PWD}/node_modules/
+  ${PWD}/config.d/
+  ${PWD}/cnt/src/
+  ${PWD}/cnt/src/__proto/
+"
