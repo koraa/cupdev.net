@@ -40,7 +40,9 @@
     "jquery-browserify":      "*",
     "svgo":                   "*",
     "canvg":                  "*",
-    "less":                   "*"
+    "less":                   "*",
+    "temp":                   "*",
+    "jasmine":                "*"
   },
   "keywords": [
     "website"

@@ -1,7 +1,7 @@
 {
   "plugins": [
     "wintersmith-stylus", "wintersmith-less", "wintersmith-jade", "wintersmith-browserify", 
-    "cdata", "svg"
+    "cdata", "svg", "font"
   ],
   "locals": {
     "url": "http://localhost:8080",

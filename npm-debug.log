@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'build' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info prebuild cupdev.net@0.0.1
+6 info build cupdev.net@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info cupdev.net@0.0.1 Failed to exec build script
+9 error cupdev.net@0.0.1 build: `sh package.d/build.sh`
+9 error Exit status 8
+10 error Failed at the cupdev.net@0.0.1 build script.
+10 error This is most likely a problem with the cupdev.net package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     sh package.d/build.sh
+10 error You can get their info via:
+10 error     npm owner ls cupdev.net
+10 error There is likely additional logging output above.
+11 error System Linux 3.15.5-1-ARCH
+12 error command "/usr/bin/node" "/usr/bin/npm" "run" "build"
+13 error cwd /home/karo/pr0j/cupdev/www/cupdev.net
+14 error node -v v0.10.29
+15 error npm -v 1.4.14
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]

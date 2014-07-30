@@ -9,6 +9,8 @@ Y = (f) ->
   (a...) ->
     f (Y f), a...
 
+Y (f) -> f()
+
 #
 # Map, but expects a nested list.
 # Each sublist will be passed to the
@@ -45,7 +47,7 @@ variad = (f) ->
 #
 # TODO: Merge with underscore?
 joinD = (a...) ->
-  _.extend {}, _.flatten a
+  _.extend {}, (_.flatten a)...
 
 # Map on a dictionary.
 # Takes a dict and a function 'f(key, value, store)'
@@ -60,7 +62,8 @@ mapD = (dic, f) ->
 # Filter a Dictionary.
 # TODO: Merge with underscore?
 filterD = (dic,f) ->
-  joinD filter (_.pairs dic), vecarg f
+  fromPairs \
+      _.filter (_.pairs dic), vecarg f
 
 #
 # Filter a dictionary,
@@ -70,7 +73,6 @@ filterD = (dic,f) ->
 rejectD = (dic,f) ->
   filterD dic, (a...) -> !f a...
 
-#
 # Wrapper to get the length of something
 len = (o) -> o.length
 
@@ -112,6 +114,26 @@ rev = (ar) ->
   _.times ar.length, (i) ->
     ar[ar.length - 1 - i]
 
+# Shorter wrapper to generate an array
+Arr = (a...) -> a
+
+#
+# Generate a tree from a nested list:
+# If a second argument is given it will
+# be used as the root of the tree.
+#
+# $ Tre [{path:$path, val:$value }, ...], $init_dict
+# TODO: Error on overwrite
+Tre = (kv, tree={}) ->
+  _.each kv, (dat) ->
+    tree_set tree, dat.path, dat.val
+  tree
+
+#
+# Concatenate strings (no seperator support)
+cat = (s...) ->
+  _s.join "", s...
+
 #
 # Contcats all given args to an array
 conc = (a...) ->
@@ -146,20 +168,38 @@ tree_set = (tree,path__,value) ->
   dir = tree_mknode tree, (_.initial path)
   dir[_.last path] = value
 
+#
+# Delete an element from a tree.
+# Returns an error, if the element
+# does not exist.
+# TODO: More errors!
+# TODO: This is redundant with the code above
+tree_del = (tree,path__) ->
+  path = tokenize path__, '/'
+
+  dir  = traverse tree, (_.initial path)
+  name = _.last path
+
+  if !dir
+    throw Error "Cannot delete #{path__}, because it's ancestor does not exists"
+  if !(name of dir)
+    throw Error "Cannot delete #{path__}, because it does not exist."
+
+  delete dir[name]
+
+# Makes sure the given
 tokenize = (l,sep=null) ->
   if _.isArray l
     a = l
   else if _.isString l
     return wordlist l, sep
   else
-    a = castarray l
+    a = castarray l # TODO: Do we need this?
 
   _.map a, (x) -> _s.strip x
-
-
-# 
 # Take a node from the ContentTree
 # and check it it is a file
+# TODO: Check using types
 treefile = (n) ->
   n && n.__filename
 
@@ -183,7 +223,14 @@ traverse = (d,p) ->
 
   if d
     traverse d[_.head p], _.tail p
-  
+
+################################################
+#
+# TODO: MOAR DOC!
+# TODO: FRIGGIN TESZ!
+#
+################################################
+
 embed = (x, root) ->
   x= castarray x         # Handle non-array args x -> [x]
   x= _.map x, (e) ->     # Extract all files
@@ -200,6 +247,20 @@ embed = (x, root) ->
   x= _.uniq x, true      # Remove duplicates
   x= rev x
 
+#
+# Takes a dict and returns a list of folders.
+# This function is specific to wintersmith.
+#
+# TODO: These should return arrays
+flatfolders = Y (y, d, path="") ->
+  x= rejectD d, (k,v) -> # Delete all files
+    treefile v
+  x= mapD x, (k,v) ->    # Recurse into subfolders
+    y v, (cat path, "/", k)
+  x= joinD x,            # Append this dir with $path: $data
+    Dic path, d
+     
+# TODO: x can be dict and path in root; that's bullshit
 flatfiles = (x,root) ->
   x= castarray x         # Handle non-array args x -> [x]
   x= _.map x, (e) ->     # Extract all files
@@ -212,8 +273,8 @@ flatfiles = (x,root) ->
 
 wordlist = (x,sep=',') ->
   x= _s.words x, sep
-  x= _.map x, (x) -> _s.strip x
-  x= _.filter x, (s) -> s
+  x= _.map x, (x) -> _s.strip x # TODO: Equiv? _.map x, _.strip
+  x= _.filter x, (s) -> s # TODO: Equiv: _.compact
 
 treesec = (x) ->
   x= _s.words x, /\//
@@ -240,6 +301,7 @@ module.exports =
   joinD: joinD
   mapD: mapD
   filterD: filterD
+  rejectD: rejectD
   traverse: traverse
   Y: Y
   len: len
@@ -248,3 +310,8 @@ module.exports =
   Dic: Dic
   fromPairs: fromPairs
   conc: conc
+  flatfolders: flatfolders
+  cat: cat
+  tree_del: tree_del
+  Arr: Arr
+  Tre: Tre

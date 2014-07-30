@@ -1,0 +1,15 @@
+{
+  "fonts": [
+    "cupglyph.ttf",
+    "cupglyph.woff",
+    "cupglyph.eot",
+    "cupglyph.svg"
+  ],
+  "templates": [
+    "fontcustom-bootstrap.css"
+  ],
+  "file_name": "cupglyph",
+  "glyphs": [
+    "twitter"
+  ]
+}

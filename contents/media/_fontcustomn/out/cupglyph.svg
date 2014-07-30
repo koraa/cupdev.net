@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-7: Created.
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Sat Sep  7 15:28:58 2013
+ By mapc
+Created by mapc with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="cupglyph" horiz-adv-x="250" >
+  <font-face 
+    font-family="cupglyph"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 240 250 443"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+F100-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M250 419c-9 -4 -19 -7 -29 -8c11 6 18 16 22 28c-10 -6 -20 -10 -32 -12c-9 10 -23 16 -38 16c-28 0 -51 -23 -51 -51c0 -4 0 -8 1 -12c-43 2 -81 23 -106 54c-4 -8 -7 -17 -7 -26c0 -18 9 -34 23 -43c-8 0 -16 3 -23 7v-1c0 -25 18 -45 41 -50c-4 -1 -8 -2 -13 -2
+c-3 0 -7 0 -10 1c7 -20 26 -36 48 -36c-18 -14 -40 -22 -64 -22c-4 0 -8 1 -12 1c23 -15 50 -23 79 -23c94 0 146 78 146 146c0 2 -1 4 -1 6c10 7 19 17 26 27z" />
+  </font>
+</defs></svg>
