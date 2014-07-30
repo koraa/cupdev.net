@@ -28,6 +28,7 @@ watchr() {
 ################################
 ## MAIN
 
-watchr 'wintersmith preview' \
-  -r config*                 \
-  -e modify,create,delete,delete_self,unmount,move,move_self
+node_modules/wintersmith/bin/wintersmith preview
+#watchr 'node_modules/wintersmith/bin/wintersmith preview' \
+  #-r config*                 \
+  #-e modify,create,delete,delete_self,unmount,move,move_self

@@ -13,4 +13,4 @@ dir="`dirname "$0"`"
 ###############################
 # HELPER
 
-wintersmith build
+node_modules/wintersmith/bin/wintersmith build
