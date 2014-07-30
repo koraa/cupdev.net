@@ -14,7 +14,7 @@
   p {
     margin: 0px;
     padding: 0px;
-  }  
+  } 
 }
 .matrix {
   text-align: center;
@@ -41,11 +41,11 @@ body {
     text-align: right;
 
     &.tags, tags {
-      ul { 
+      ul {
         display: inline;
         margin-left: 0px;
       }
-      li { 
+      li {
         display: inline;
         line-height: inherit;
 
@@ -84,11 +84,27 @@ body {
 .embed-article {
   .article;
 
-  margin: 40px;
-  padding: 15px;
-  background: @bodyBackground;
-  border: 1px solid black;
-  .border-stripes();
+  margin: 0px 40px;
+
+  &:after {
+    background: url("/media/ornament_straight.png");
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    width: 80%;
+    height: 15px;
+
+    content: "";
+    display: block;
+    margin: 50px auto;
+  }
+
+  &after:last-child {
+    margin: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+  }
 }
 
 .one-article, .onearticle {
@@ -98,7 +114,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @serifFontFamily; 
+  font-family: @serifFontFamily;
   font-style: italic;
 
 
@@ -131,36 +147,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  background-repeat: no-repeat;
-  background-position: left center, right center;
+  width: 70%
+}
 
-  text-align: center;
-  display: block;
-}
-h1, h2 {
-  background-image: url(@img_ornament_title_big_left), url(@img_ornament_title_big);
-}
-h1 {
-  min-height: @ornament-L-h;
-  padding-left: @ornament-L-pad;
-  padding-right: @ornament-L-pad;
-  background-size: @ornament-L-w @ornament-L-h;
-}
-h2 {
-  min-height: @ornament-M-h;
-  padding-left: @ornament-M-pad;
-  padding-right: @ornament-M-pad;
-  background-size: @ornament-M-w @ornament-M-h;
-}
-h3 {
-  background-image: url(@img_ornament_title_small_left), url(@img_ornament_title_small);
-  min-hheight: @ornament-S-h;
-  padding-left: @ornament-S-pad;
-  padding-right: @ornament-S-pad;
-  background-size: @ornament-S-w @ornament-S-h;
-}
 .betabar {
-  font-family: @sansFontFamily; 
+  font-family: @sansFontFamily;
 
   width: 100%;
   padding: 0.4em;
