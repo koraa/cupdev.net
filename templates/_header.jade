@@ -1,18 +1,19 @@
-nav.navbar.navbar-static-top(role="navigation")
-  .navbar-header
-    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
-      span.sr-only Toggle navigation
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    li: a(href="/").navbar-brand Cupdev
+nav.navbar.navbar-fixed-top(role="navigation")
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a(href="/").navbar-brand Cupdev
 
-  .collapse.navbar-collapse.navbar-ex1-collapse
-    ul.nav.navbar-nav
-      li: a(href="/blog/")     Blog
-      li: a(href="/projects/") Projects
-      li: a(href="/about/")    About Me
-      li: a(href="/links/")    Links
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      ul.nav.navbar-nav
+        li: a(href="/blog/")     Blog
+        li: a(href="/projects/") Projects
+        li: a(href="/about/")    About Me
+        li: a(href="/links/")    Links
 
-    ul.nav.navbar-nav.navbar-right
-      li: a(href="/feed/std.xml") RSS
+      ul.nav.navbar-nav.navbar-right
+        li: a(href="/feed/std.xml") RSS
