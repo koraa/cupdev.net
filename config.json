@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "wintersmith-stylus", "wintersmith-less", "wintersmith-jade", "wintersmith-browserify", 
+    "wintersmith-less", "wintersmith-jade", "wintersmith-browserify",
     "cdata", "svg"
   ],
   "locals": {
@@ -13,9 +13,11 @@
 
   "ignore": ["**.off", "**proto**", "**/_*"],
   "require": {
-    "cs": "coffee-script",
+    "cs": "coffee-script/register",
     "$":  "jquery",
     "httpsync": "httpsync",
+    "uuid": "uuid",
+    "Moment": "moment",
     "widx": "widx"
   },
 

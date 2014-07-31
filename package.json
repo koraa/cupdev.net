@@ -35,12 +35,20 @@
     "httpsync":               ">=0.0.6",
     "wintersmith":            ">=1.2.2",
     "wintersmith-stylus":     ">=0.1.2",
+    "wintersmith-browserify": "*",
+    "wintersmith-jade":       "*",
+    "wintersmith-less":       "*",
     "underscore":             "*",
+    "underscore.string":      "*",
+    "bootstrap":              "*",
+    "canvas":                 "*",
     "marked":                 "*",
     "jquery-browserify":      "*",
     "svgo":                   "*",
     "canvg":                  "*",
-    "less":                   "*"
+    "less":                   "*",
+    "uuid":                   "*",
+    "moment":                 "*"
   },
   "keywords": [
     "website"

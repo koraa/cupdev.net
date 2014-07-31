@@ -3,22 +3,18 @@ mixin GET(url)
     - console.log("GET:", url)
     #{String(httpsync.get(url).end().data)}
 
-mixin rendrtags(tags)
-  if (tags)
-    | Tags:
-    | &nbsp;
-    ul
-      each tag in widx.wordlist(tags)
-        li
-          a(href="/search?tag=#{tag}")= tag
+mixin metadata(meta)
+  dl.meta
+    dt.meta-date Date:
+    dd.meta-date
+      = Moment(meta.date).zone(0).format('ddd MMM YYYY HH:mm UTC')
 
-mixin rendrsec(sec)
-  if !sec
-    - sec="none"
+    dt.meta-cat Category:
+    dd.meta-cat
+      ul: each dir in widx.treesec(meta.category)
+          li: a(href="/search?sec=#{dir.path}")= dir.name
 
-  | Category:
-  | &nbsp;
-  each dir in widx.treesec(sec)
-    if dir.depth
-      | /
-    a(href="/search?sec=#{dir.path}")= dir.name
+    dt.meta-tag Tags:
+    dd.meta-tag
+      ul: each tag in widx.wordlist(meta.tags)
+        li: a(href="/search?tag=#{tag}")= tag

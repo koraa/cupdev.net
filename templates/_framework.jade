@@ -8,15 +8,11 @@ html(lang="en")
         meta(charset='utf-8')
         block head
     body.bg
-        /////| HEAD ---------------------------------------------------------
         include _header
-
-        /////| BODY TEXT ----------------------------------------------------
 
         .body
             mixin GET(page.metadata.fetch)
             block body
             mixin GET(page.metadata.fetch_post)
 
-        /////| FOOT ----------------------------------------------------------
         include _footer
