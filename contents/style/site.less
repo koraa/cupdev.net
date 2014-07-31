@@ -198,6 +198,15 @@ h1 {
   text-align: center;
 }
 
+.comment {
+  font-family: "SourceCodePro";
+  color: #AAA;
+
+  &:before {
+    content: "// ";
+  }
+}
+
 .betabar {
   font-family: @sansFontFamily;
 
@@ -222,4 +231,9 @@ h1 {
     right:  (0);
     z-index: +10;
   }
+}
+
+hr {
+  width: 80%;
+  border-bottom: 1px solid rgba(0,0,0,0.18);
 }
