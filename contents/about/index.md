@@ -11,7 +11,7 @@ what this is; that's some attention - *wow, thanks*!
 So, here are the basics: I am a programmer living in Germany
 I work as
 a freelance programmer and participate in a bunch of open
-source projects. 
+source projects.
 Besides my programming/IT activities a play Bass and I am
 involved in efforts to promote
 [LGBT](https://en.wikipedia.org/wiki/LGBT) rights.
