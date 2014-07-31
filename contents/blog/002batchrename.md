@@ -1,5 +1,5 @@
 ---
-title: Batch rename in bash
+title: Batch rename in Bash
 date:  Sun, 12 May 2013 23:25:53 +0200
 tags:  tech, unix, linux, cli, sed, awk
 category: tech/cli
@@ -7,23 +7,23 @@ template: article.jade
 ---
 
 There are a few tools that provide batch renaming for the shell,
-but most of them are quite huge and need installing.  
+but most of them are quite huge and need installing.
 It is not necessary to use these utilities,
-because unix allready all tools necessary:
+because unix already all tools necessary:
 
 ```bash
 $ ls -d *.txt | sed 'p;s/foo/bar/' | xargs -l2 mv
 ```
 
 The first part should be quit clear: Print all files ending with
-**txt**.     
-The **'\*.txt'** makes use of the shell's globbing features
-and filters all the **'.txt'** files.
-The **'-d'** switch tells **ls** not to print the contents of directories.  
+`txt`.
+The `\*.txt` makes use of the shell's globbing features
+and filters all the `.txt` files.
+The `-d` switch tells `ls` not to print the contents of directories.
 
 
-The sed expression consists of two parts: **p** prints
-the current line and **'s/foo/bar/'** is the actuall transformation
+The sed expression consists of two parts: `p` prints
+the current line and `s/foo/bar/` is the actual transformation
 (in this case: a replacement).
 If I run this on my home directory I get this:
 
@@ -51,14 +51,14 @@ usr
 ```
 
 Notice that most files have just been printed twice,
-but **fuu**  and **fuubar** where changed to **bar** and **barbar**.
+but `fuu`  and `fuubar` where changed to `bar` and `barbar`.
 
-Now comes the tricky bit: **xargs** takes each two lines 
-and applys them to **mv** as arguments, 
+Now comes the tricky bit: `xargs` takes each two lines
+and applies them to `mv` as arguments,
 so when I run xargs in debug mode I get this:
 
 ```bash
-$ ls | sed 'p;s/fuu/bar/' | xargs -l2 echo mv 
+$ ls | sed 'p;s/fuu/bar/' | xargs -l2 echo mv
 mv down down
 mv duh duh
 mv files files
@@ -69,10 +69,10 @@ mv tmp tmp
 mv usr usr
 ```
 
-Notice that I did not use the **'-d'** flag this time,
-because I print the content of the directory **'.'** this time,
+Notice that I did not use the `'-d'` flag this time,
+because I print the content of the directory `'.'` this time,
 not a list of given files.
-This would happen if I did use **'-d'**.
+This would happen if I did use `'-d'`.
 
 ```bash
 $ ls -d
@@ -85,9 +85,9 @@ mv . .
 ### Getting complicated
 
 In the above example I did not do any filtering,
-becaus the files **foo** and **foobar** 
+because the files `foo` and `foobar`
 (which existed before I began to write this article)
-do not have an extinsion, but I could use a filter to select only those files I
+do not have an extension, but I could use a filter to select only those files I
 actually want to rename:
 
 ```bash
@@ -96,7 +96,7 @@ mv fuu bar
 mv fuubar barbar
 ```
 
-I can get as elaborate as I want with my filter if I use grep; 
+I can get as elaborate as I want with my filter if I use grep;
 here is the same as above using grep:
 
 ```bash
@@ -114,8 +114,8 @@ mv fuu bar
 mv fuubar barbar
 ```
 
-One last example, where we replace files recoursively in the home directory:
-I use **find** instad of **ls** which lists a directory recoursively
+One last example, where we replace files recursively in the home directory:
+I use `find` instead of `ls` which lists a directory recursively
 (I am not actually running this and neither should you):
 
 ```bash
