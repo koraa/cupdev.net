@@ -3,96 +3,64 @@ title: About Me
 template: article.jade
 ---
 
-Hi,  I am Karolin Varner
+I am Karolin Varner
 
 You found my website and you are even trying to find out
-what this is;   that's some attention - *wow, thanks*!
+what this is; that's some attention - *wow, thanks*!
 
-So, here are the basics: I was born 1993 in Munich, Germany
-and I am still living there to this very moment.  I work as
-a freelance programmer and participate in a few open
-source projects. Besides my programming/IT activities a
-also play Bass (both double bass and electric) and I produce
-the nachtschmoker podcast in which I read short stories.
+So, here are the basics: I am a programmer living in Germany
+I work as
+a freelance programmer and participate in a bunch of open
+source projects. 
+Besides my programming/IT activities a play Bass and I am
+involved in efforts to promote
+[LGBT](https://en.wikipedia.org/wiki/LGBT) rights.
 
 This website is intend to be a collection of my public
 activity.
 
 ### Hire me!
 
-#### Curriculum vitae
-
-At the age of six I joined the Klenze elementary school.
-Afterwards I attended the Pestalozzi Gymnasium, where I
-stayed until the tenth grade and earned a medium school
-degree. Afterwards I switched to the technical FOS (topic specific higher
-education school) which I canceled for social
-reasons.
-Still, I learned a lot about electrical engineering while attending this school.
-At the moment I am doing an apprenticeship as an technical assistant
-in order to expand my knowledge about electronics and hardware in general.
-After I finish this part of my life I plan to study engineering or informatics.
-
 #### Skills
 
 I offer the following services on a freelance basis:
 
-* Web applications with focus on rich clients
-* Generic-purpose application development
-* Basic web and print design
-* Linux system administration and support
-* Desktop support
+* Programming (Node.js, Rails, Posix/C)
+* Basic web design
+* Linux system administration and support including some
+  more advanced topics like full disc encryption, ZFS,
+  complex networking setups, docker, LXC and KVM.
 
-I have good knowledge of the following technologies:
-
-* Programming languages:
-    * Python
-    * Javascript and Coffescript
-    * node.js
-    * C
-    * PHP
-    * Ruby
-    * Shell
-    * Java
-* SCM
-    * Git
-    * Svn
-    * Bazaar
-* Other technologies:
-    * HTML
-    * CSS
-    * SQL
-
-Further I have limited knowledge of the following
-technologies:
-
-* Embedded systems
-* Distributed systems (for heavy-loads)
-* Ruby, Ruby on Rails
-* C++
+I know a lot of programming languages and am very happy to
+learn new ones (I am particularly eager to get in touch more
+with HDLs like VHDL and Verilog and functional Languages
+like Haskell and Erlang).
+Among the languages I know relatively well are JS,
+Coffeescript, Python, C and Ruby.
 
 I consider the abilities to use different systems, to quickly
 learn new technologies and to work with data (network
-protocols, files) as base-skills.
+protocols, file formats, data structures…) as the very
+foundation of any programming skills.
+
+I am doing a lot of work for [Soup.io](http://soup.io) at
+the moment and in the past I have done work for [Videri
+Concept](http://www.videri-concept.de/) and a lot of smaller
+companies.
+Also check out my open source projects on
+[GitHub](https://github.com/koraa).
+
+I charge 45€ per hour.
+
+[Contact me!](mailto://office.karo@cupdev.net).
 
 ### Trans
 
-If you have made it this far down, there is a last detail
-you should know: I am transsexual; to brake it down: I was
-born a guy, but feel that I am girl; please don't confuse
-with transvestisim or cross-dressing which is males takeing
-joy in wearing women's clothes
-(also read the [Wikipage](https://en.wikipedia.org/wiki/Transsexualism)).
+I am [transsexual](https://en.wikipedia.org/wiki/Transgender),
+which means I am female, unfortunately born in a mail body.
+I whish to be legally and socially accepted as a female;
+unfortunately this process requires some time: I am still
+required to use my male name for legal purposes.
 
-In case you meet me in person (especially if you are
-planning to have a job interview with me: 
-I suppose my appearance does not quite fit the
-description above; I try do fit in as good as I can -
-mostly by choosing the standard geek T-shirt/dress shirt and jeans
-combination and looking too male for my liking.
-
-
-
-This is the end (my friend),
-so long and thenks and all the fish and reading
-
+So long and thanks and all the fish!
+<div style="color: #eee; font-size: 2px">Hail Eris. Hail Discordia</div>
