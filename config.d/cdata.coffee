@@ -13,7 +13,7 @@ evfile = (f, options) ->
   code = String fs.readFileSync f
   
   # Setup sandbox
-  _.extend options.sandbox, global 
+  _.extend options.sandbox, global
   if !options.sandbox.require
     options.sandbox.require = require
 

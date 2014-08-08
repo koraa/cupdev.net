@@ -1,6 +1,6 @@
 $ = require 'jquery-browserify'
 _ = require 'underscore'
-search = require './__proto/search.coffee'
+#search = require './__proto/search.coffee'
 
 require 'bootstrap/js/transition'
 require 'bootstrap/js/collapse'
@@ -25,6 +25,4 @@ window.P  = P
 window._  = _
 window.$  = $
 window.search = search
-
-window.as = require 'async'
 

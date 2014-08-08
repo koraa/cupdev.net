@@ -1,6 +1,17 @@
 _  = require 'underscore'
 _s = require 'underscore.string'
 
+HttpSync = require 'http-sync'
+
+mkjQuery = require 'jquery'
+
+JsDOM = require 'jsdom'
+JsDOM.defaultDocumentFeatures.FetchExternalResources = false
+JsDOM.defaultDocumentFeatures.ProcessExternalResources = false
+
+
+
+
 #
 # Pseudo Y Combinator
 # Mutates a function so that it's first argument will be itself.
@@ -157,7 +168,7 @@ tokenize = (l,sep=null) ->
   _.map a, (x) -> _s.strip x
 
 
-# 
+#
 # Take a node from the ContentTree
 # and check it it is a file
 treefile = (n) ->
@@ -224,6 +235,61 @@ treesec = (x) ->
     path: _s.join "/", x[..i]
     depth: i
 
+# Do a simple, synchronous GET request on an url
+# Follows redirects (only 301)
+GET = (url__, flags={}) ->
+  console.error "GET ", url__
+
+  if (flags.redirects > 10)
+    throw new Error "Redirect loop encountered!"
+
+  opts = url.parse url__
+  opts = _.pick opts, 'protocol', 'host', 'path', 'port'
+  opts.protocol = opts.protocol.replace ':', ''
+
+  r = HttpSync.request opts
+    .end()
+
+  if r.statusCode == 301
+    flags.redirects ||= -1
+    flags.redirects++
+    GET r.headers.Location, flags
+  else
+    r.body.toString()
+
+# Takes the URL to a gist
+# Returns the raw contents
+dump_gist = (url__) ->
+  html = GET url__
+
+
+  doc = JsDOM.jsdom html
+  win = doc.parentWindow
+
+  $ =  mkjQuery win
+  raw_url = $('a.raw-url').attr 'href'
+
+  win.close()
+
+  GET 'https://gist.github.com' + raw_url
+
+postprocess = (html) ->
+  doc = JsDOM.jsdom ""
+  win = doc.parentWindow
+  $ =  mkjQuery win
+
+  post = $ html
+
+  # Load gists
+  post.find("gist").each (g__) ->
+    g = $ g__
+    P "gist:", g
+    #code = dump_gist g.attr 'url'
+    #g.replace "<pre><code>" + code + "</pre></code>"
+  
+  P html, " ::: ", post.html()
+  return post.html()
+
 module.exports =
   _:  _
   _s: _s
@@ -248,3 +314,6 @@ module.exports =
   Dic: Dic
   fromPairs: fromPairs
   conc: conc
+  GET: GET
+  dump_gist: dump_gist
+  postprocess: postprocess

@@ -12,6 +12,6 @@ block body
             a(href=post.url)
               = post.title
           span.text
-            !{post.html}
+            = widx.postprocess(post.html)
 
           mixin metadata(post.metadata)
