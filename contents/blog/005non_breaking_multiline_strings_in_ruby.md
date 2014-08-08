@@ -1,6 +1,6 @@
 ---
 title: Non breaking multi line strings in Ruby
-date:  Fri Aug  8 12:44:49 CEST 2014
+date:  Fri, 08 Aug 2014 12:44:49 +0200
 tags:  tech, ruby, rails, code
 flags: quick
 category: tech/ruby

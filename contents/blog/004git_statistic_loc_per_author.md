@@ -1,6 +1,7 @@
 ---
 title: Git stats – LOC per author in the current head
-date:  Fri Aug  1 04:08:47 CEST 2014
+date:  Fri, 01 Aug 2014 04:08:47 +0200
+date: invalid date ‘Fri, 01 Aug  1 04:08:47 CEST 2014’
 tags:  tech, unix, shell, awk, git
 flags: quick
 category: tech/git
