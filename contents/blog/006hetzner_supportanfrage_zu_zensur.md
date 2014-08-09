@@ -21,9 +21,9 @@ senden (und so vielleicht etwas Druck aufzubauen):
 > Sehr geehrte Damen und Herren,
 > ich habe soeben folgenden Spiegel Artikel gelesen:
 >
->     Webhoster Hetzner: Deutsche Firma hilft russischer Medienaufsicht bei Zensur
+> Webhoster Hetzner: Deutsche Firma hilft russischer Medienaufsicht bei Zensur
 >
->     http://www.spiegel.de/netzwelt/netzpolitik/webhoster-hetzner-fordert-zensur-von-ukrainischer-website-glavcom-a-985147.html#js-article-comments-box-pager
+> http://www.spiegel.de/netzwelt/netzpolitik/webhoster-hetzner-fordert-zensur-von-ukrainischer-website-glavcom-a-985147.html#js-article-comments-box-pager
 >
 > Darin wird beschrieben, dass sie eine Mitteilung der russischen Medienaufsicht erhalten haben, die die Aufforderung enthielt teile der Ukrainischen Seite Glavcom zu Zensieren.
 > Offenbar haben sie darauf reagiert indem sie die Website aufgefordert haben, die Inhalte vom Netz zu nehmen.
