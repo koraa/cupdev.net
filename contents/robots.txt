@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /~karo/invisible/
+Disallow: /~mapc/invisible/
