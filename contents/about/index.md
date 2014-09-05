@@ -57,8 +57,8 @@ I charge 45€ per hour.
 ### Trans
 
 I am [transsexual](https://en.wikipedia.org/wiki/Transgender),
-which means I am female, unfortunately born in a mail body.
-I whish to be legally and socially accepted as a female;
+which means I am female, unfortunately born in a male body.
+I wish to be legally and socially accepted as a female;
 unfortunately this process requires some time: I am still
 required to use my male name for legal purposes.
 
