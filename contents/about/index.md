@@ -52,7 +52,7 @@ Also check out my open source projects on
 
 I charge 45€ per hour.
 
-[Contact me!](mailto://office.karo@cupdev.net).
+[Contact me!](mailto:office.karo@cupdev.net).
 
 ### Trans
 
