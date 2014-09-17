@@ -57,10 +57,9 @@ I charge 45€ per hour.
 ### Trans
 
 I am [transsexual](https://en.wikipedia.org/wiki/Transgender),
-which means I am female, unfortunately born in a male body.
-I wish to be legally and socially accepted as a female;
-unfortunately this process requires some time: I am still
-required to use my male name for legal purposes.
+which means I am female, unfortunately assigned male at birth.
+I am in the process of changing my name, but I am still
+required to use the old name for legal purposes.
 
 So long and thanks and all the fish!
 <div style="color: #eee; font-size: 2px">Hail Eris. Hail Discordia</div>
