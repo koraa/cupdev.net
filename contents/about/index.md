@@ -53,13 +53,3 @@ Also check out my open source projects on
 I charge 45€ per hour.
 
 [Contact me!](mailto:office.karo@cupdev.net).
-
-### Trans
-
-I am [transsexual](https://en.wikipedia.org/wiki/Transgender),
-which means I am female, unfortunately assigned male at birth.
-I am in the process of changing my name, but I am still
-required to use the old name for legal purposes.
-
-So long and thanks and all the fish!
-<div style="color: #eee; font-size: 2px">Hail Eris. Hail Discordia</div>
