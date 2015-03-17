@@ -32,7 +32,6 @@
     "jquery":                 ">=1.8.3",
     "futures":                ">=2.1.0",
     "coffeeify":              ">=0.3.0",
-    "httpsync":               ">=0.0.6",
     "wintersmith":            ">=1.2.2",
     "wintersmith-stylus":     ">=0.1.2",
     "wintersmith-browserify": "*",

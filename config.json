@@ -15,7 +15,6 @@
   "require": {
     "cs": "coffee-script/register",
     "$":  "jquery",
-    "httpsync": "httpsync",
     "uuid": "uuid",
     "Moment": "moment",
     "widx": "widx"
