@@ -3,18 +3,11 @@ title: About Me
 template: article.jade
 ---
 
-I am Karolin Varner
 
-You found my website and you are even trying to find out
-what this is; that's some attention - *wow, thanks*!
-
-So, here are the basics: I am a programmer living in Germany
-I work as
-a freelance programmer and participate in a bunch of open
-source projects.
-Besides my programming/IT activities a play Bass and I am
-involved in efforts to promote
-[LGBT](https://en.wikipedia.org/wiki/LGBT) rights.
+I am Karolin Varner, a programmer living in Germany who is
+mostly doing work as a freelance programmer and participate
+in a bunch of open source projects.  Besides IT stuff I am
+also playing electric bass.
 
 This website is intend to be a collection of my public
 activity.
