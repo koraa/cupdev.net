@@ -44,4 +44,4 @@ game [Inexor](https://github.com/inexor-game/code).
 Check out  [GitHub](https://github.com/koraa) to find some
 of my other open source projects.
 
-[Contact me!](mailto:karo@cupdev.net).
+[Contact me!](mailto:karo@cupdev.net)
