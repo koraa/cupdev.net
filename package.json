@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mappleconfusers/cupdev.net.git"
+    "url": "git://github.com/koraa/cupdev.net.git"
   },
   "bugs": {
-    "url": "https://github.com/mappleconufsers/cupdev.net/issues"
+    "url": "https://github.com/koraa/cupdev.net/issues"
   },
   "engines": {
     "node": ">=0.6"
