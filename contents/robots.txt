@@ -1,3 +1,10 @@
 User-agent: *
-Disallow: /~karo/invisible/
-Disallow: /~mapc/invisible/
+Disallow: /~karo/
+Disallow: /~mapc/
+Disallow: /~steinkeks
+Disallow: /~auphonic
+Disallow: /~fabian
+Disallow: /~hanack
+Disallow: /~blendi
+Disallow: /~derw
+Disallow: /~supertux
