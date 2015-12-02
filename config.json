@@ -12,7 +12,7 @@
     "comment_email": "blog-comments.karo@cupdev.net"
   },
 
-  "ignore": ["**.off", "**proto**", "**/_*"],
+  "ignore": ["**.off", "**proto**", "**/_*", "**/.*"],
   "require": {
     "cs": "coffee-script/register",
     "$":  "jquery",
