@@ -1,0 +1,3 @@
+[submodule "templates/comments"]
+	path = templates/comments
+	url = https://github.com/koraa/wintersmith-static-comments.git

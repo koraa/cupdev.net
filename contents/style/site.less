@@ -94,6 +94,76 @@ code {
   }
 }
 
+.comments {
+
+  margin-top: 5em;
+
+  .write-a-comment {
+    font-size: 130%;
+  }
+
+  // Hide the big comments header
+  &>.ornwrap:first-child {
+    display: none;
+  }
+
+  .comment {
+    margin-bottom: 3em;
+  }
+
+  .comment-body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .comment-meta {
+    margin-bottom: 2em;
+
+    * {
+      display: inline;
+
+      margin-left:  1em;
+      margin-right: 1em;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+    .comment-name:before {
+      content: "Comment from "
+    }
+
+    .ornwrap {
+      margin: 0px;
+      text-align: inherit;
+    }
+
+    border-bottom: 1px solid rgba(0,0,0,0.18);
+  }
+}
+
+.comments-overview {
+  margin-top: 2em;
+  font-size: 130%;
+
+  * {
+    display: inline;
+
+    &:after {
+      content: " ~ ";
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
 dl.meta {
   font-family: "SourceCodepro";
   font-size: xx-small;
