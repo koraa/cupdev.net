@@ -7,8 +7,9 @@
     "url": "http://localhost:8080",
     "name": "Cupdev",
     "owner": "Karolin Varner",
-    "description": "Messias of multiple religions",
-    "index_articles": 3
+    "description": "Duplicorn",
+    "index_articles": 3,
+    "comment_email": "blog-comments.karo@cupdev.net"
   },
 
   "ignore": ["**.off", "**proto**", "**/_*"],
