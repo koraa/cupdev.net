@@ -47,7 +47,8 @@
     "canvg":                  "*",
     "less":                   "*",
     "uuid":                   "*",
-    "moment":                 "*"
+    "moment":                 "*",
+    "html-to-text":           "*"
   },
   "keywords": [
     "website"
