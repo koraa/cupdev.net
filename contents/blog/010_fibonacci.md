@@ -73,10 +73,12 @@ Search the internet for "fast fibonacci algorithm", find this page https://www.n
 and download the source code for fast doubling from that page. This is the only fibonacci implementation you will ever need.
 Use this and see how amazed (or potentially angry or scared) recruiters will be at how fast you can compute any fibonacci number.
 
-## Bonus: Recursive naive O(1)
+## Bonus: Recursive naive
+
+*O(1)*
 
 This is like the naive algorithm generating the entire sequence except that it's recursive and will fail after a couple
-hundred iterations because the python joksters have out of pure trolling prowess not yet implemented proper (tail call optimization)[https://en.wikipedia.org/wiki/Tail_call]
+hundred iterations because the python joksters have out of pure trolling prowess not yet implemented proper [tail call optimization](https://en.wikipedia.org/wiki/Tail_call)
 
 ```
 def fib_sequence(a=0, b=1):
