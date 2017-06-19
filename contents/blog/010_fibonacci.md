@@ -14,7 +14,7 @@ are in the broad area of fibonacci computation but also to demonstrate your humo
 
 **TL;DR: Type "fast fibonacci algorithm" into your mobile browser before the eyes of your soon-to-be boss and download the resulting algorithm.**
 
-## The silly algorithm
+### The silly algorithm
 
 *O(wtf this is calling itself twice recursively must be something truly horrific)*
 
@@ -26,7 +26,7 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 ```
 
-## The naive algorithm
+### The naive algorithm
 
 *O(n)*
 
@@ -65,7 +65,7 @@ def fib(n):
     return at(n, fib_sequence())
 ```
 
-## The sensible
+### The sensible
 
 *O(log n)*
 
@@ -73,7 +73,7 @@ Search the internet for "fast fibonacci algorithm", find this page https://www.n
 and download the source code for fast doubling from that page. This is the only fibonacci implementation you will ever need.
 Use this and see how amazed (or potentially angry or scared) recruiters will be at how fast you can compute any fibonacci number.
 
-## Bonus: Recursive naive
+### Bonus: Recursive naive
 
 *O(1)*
 
