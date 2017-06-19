@@ -12,7 +12,7 @@ or parts of it. Since this is a common interview question, you may print out thi
 and show it to your potential employers, not only to demonstrate how specialized your abilities
 are in the broad area of fibonacci computation but also to demonstrate your humor and free spirit.
 
-**TL;DR: Type "fast fibonacci algorithm" into your mobile phone before the eyes of your soon-to-be boss and download the resulting algorithm.**
+**TL;DR: Type "fast fibonacci algorithm" into your mobile browser before the eyes of your soon-to-be boss and download the resulting algorithm.**
 
 ## The silly algorithm
 
