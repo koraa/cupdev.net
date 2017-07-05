@@ -72,7 +72,7 @@ Use this and see how amazed (or potentially angry or scared) recruiters will be 
 
 *O(1)*
 
-This is like the naive algorithm generating the entire sequence except that it's recursive and will fail after a couple
+This is like the naive algorithm generating the entire sequence except that it's recursive, much more pretty and it will fail after a couple
 hundred iterations because the python joksters have out of pure trolling prowess not yet implemented proper [tail call optimization](https://en.wikipedia.org/wiki/Tail_call)
 
 ```
