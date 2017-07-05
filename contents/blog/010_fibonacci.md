@@ -49,17 +49,12 @@ def at(n, seq):
 
 def fib_sequence():
     a = 0
-    yield a
-
     b = 1
-    yield b
-
     while True:
-        a += b
         yield a
-
-        b += a
         yield b
+        a += b
+        b += a
 
 def fib(n):
     return at(n, fib_sequence())
