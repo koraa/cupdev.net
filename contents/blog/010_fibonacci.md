@@ -78,7 +78,7 @@ hundred iterations because the python joksters have out of pure trolling prowess
 ```
 def fib_sequence(a=0, b=1):
     yield a
-    yield from fib_sequence2(b, a+b)
+    yield from fib_sequence(b, a+b)
 
 ...
 ```
