@@ -4,7 +4,7 @@ date:  Sat, 21 Nov 2015 14:20:09 +0100
 tags:  politik, patreon, hack, leak
 category: politics
 lang: en
-template: article.jade
+template: article.pug
 ---
 
 **Note: if you receive a similar mail, don't pay. Your data is already public and their claims to have sensitive data is very likely a bluff.**

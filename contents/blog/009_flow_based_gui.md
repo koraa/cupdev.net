@@ -4,7 +4,7 @@ date:  Sun, 20 Mar 2016 18:33:50 +0100
 tags:  ui, programming
 category: tech
 lang: en
-template: article.jade
+template: article.pug
 ---
 
 **Note:** I wrote this as a comment http://gandre.ws/blog/blog/2015/04/07/why-the-command-line-is-not-usable/

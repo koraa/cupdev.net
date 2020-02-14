@@ -5,7 +5,7 @@ tags:  hetzner, politik, russland, ukraine
 flags: quick
 category: politik
 lang: de
-template: article.jade
+template: article.pug
 ---
 
 Ich habe gerade einen

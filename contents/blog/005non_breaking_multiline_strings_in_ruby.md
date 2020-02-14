@@ -4,7 +4,7 @@ date:  Fri, 08 Aug 2014 12:44:49 +0200
 tags:  tech, ruby, rails, code
 flags: quick
 category: tech/ruby
-template: article.jade
+template: article.pug
 ---
 
 Personally I like my code to be no longer than 60 characters

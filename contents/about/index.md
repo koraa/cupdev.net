@@ -1,6 +1,6 @@
 ---
 title: About Me
-template: article.jade
+template: article.pug
 ---
 
 

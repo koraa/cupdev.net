@@ -8,6 +8,6 @@ block body
       span.text
         != page.html
 
-      mixin metadata(page.metadata)
+      +metadata(page.metadata)
 
-      include comments/comments.jade
+      include comments/comments.pug

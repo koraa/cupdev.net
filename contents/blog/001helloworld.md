@@ -1,6 +1,6 @@
 ---
 title: Hello World
-template: 'article.jade'
+template: 'article.pug'
 date:  Mon, 06 May 2013 23:30:36 +0200
 ---
 

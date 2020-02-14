@@ -4,7 +4,7 @@ date:  Thu, 08 Aug 2013 22:20:05 +0200
 tags:  tech, unix, linux, cli, media, mplayer, vlc
 flags: quick
 category: tech/cli
-template: article.jade
+template: article.pug
 ---
 
 Suppose you have a bunch of movies in a directory and want

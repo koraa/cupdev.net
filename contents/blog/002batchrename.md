@@ -3,7 +3,7 @@ title: Batch rename in Bash
 date:  Sun, 12 May 2013 23:25:53 +0200
 tags:  tech, unix, linux, cli, sed, awk
 category: tech/cli
-template: article.jade
+template: article.pug
 ---
 
 There are a few tools that provide batch renaming for the shell,

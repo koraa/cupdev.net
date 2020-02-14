@@ -4,7 +4,7 @@ date:  Mon, 19 Jun 2017 11:45:02 +0200
 tags:  algorithms, programming
 category: tech
 lang: en
-template: article.jade
+template: article.pug
 ---
 
 This blog post shall given an overview over different methods to compute the fibonacci sequence

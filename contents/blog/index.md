@@ -1,6 +1,6 @@
 ---
 title: 'Cupdev'
-template: 'accu.jade'
+template: 'accu.pug'
 flags: ['meta']
 ---
   
