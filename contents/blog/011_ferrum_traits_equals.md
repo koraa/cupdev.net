@@ -22,7 +22,7 @@ The second question we had to address, turned out to be more complex;
 “How can we implement a function like `equals()` or `hash()` correctly
 in javascript?" Here’s how we tackled that one, too.
 
-# How to (badly) implement equals
+## How to (badly) implement equals
 
 It seems like there are a lot of implementations of these kinds of
 functions; lodash has one for instance. For `hash()` there is
@@ -94,7 +94,7 @@ Even if the `equals()` implementation you are using has some support for
 custom types (automatically comparing each field), this example would
 still fail, even though `2/2` clearly equals `1/1`.
 
-# Using ferrum.js to get it right
+## Using ferrum.js to get it right
 
 So, in order to implement `equals()` correctly, we need to support all
 the types your users might want to create; the function needs to be
@@ -163,7 +163,7 @@ take as much of the edge case load of the developer…anything that fits
 that description should probably be part of the Ferrum ecosystem — make
 JavaScript a bit safer.
 
-# What’s next?
+## What’s next?
 
 Ferrum is currently under active development. One upcoming big feature
 (again, borrowed from rust) is documentation testing. Ever found that
