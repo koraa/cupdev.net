@@ -30,7 +30,7 @@ functions; lodash has one for instance. For `hash()` there is
 contributed to myself a while ago! In principle, implementing a
 function like equals is relatively easy:
 
-```js
+```javascript
 const assert = require('assert');
 
 const equals = (a, b) => {
@@ -81,13 +81,15 @@ assert(equals(
 All these implementations have a drawback though: They can’t support any
 types they don’t know about; like this one for instance:
 
-```
+```javascript
 class Rational {
   constructor(p, q) {
     this.p = p;
     this.q = q;
   }...
-}assert(equals(new Rational(2, 2), Rational(1, 1)));
+};
+
+assert(equals(new Rational(2, 2), Rational(1, 1)));
 ```
 
 Even if the `equals()` implementation you are using has some support for
@@ -109,7 +111,7 @@ extension points for functions like `equals()`. Ferrum already has an
 and an [eq()](https://www.ferrumjs.org/module-stdtraits.html#~eq)
 function, so we can just reuse it:
 
-``` ie if ig ih ii ij ik ct
+```javascript
 const { Equals, eq } = require('ferrum');
 
 class Rational {
