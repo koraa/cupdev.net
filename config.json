@@ -4,7 +4,7 @@
     "cdata", "svg"
   ],
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "https://cupdev.net",
     "name": "Cupdev",
     "owner": "Karolin Varner",
     "description": "Duplicorn",
