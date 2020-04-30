@@ -35,7 +35,7 @@
     "coffeeify": ">=3.0.1",
     "futures": ">=2.3.3",
     "html-to-text": "*",
-    "jquery": ">=3.4.1",
+    "jquery": ">=3.5.0",
     "jquery-browserify": "*",
     "less": "*",
     "marked": "*",
