@@ -5,6 +5,10 @@ tags:  politik, patreon, hack, leak
 category: politics
 lang: en
 template: article.pug
+blurb:
+  I received some spam mail using data from the patreon breach; writing this blurb in 2020 I marvel at
+  how happy times these must have been for me to even note such an occurrence. I now receive hundreds
+  of mails like this every day.
 ---
 
 **Note: if you receive a similar mail, don't pay. Your data is already public and their claims to have sensitive data is very likely a bluff.**

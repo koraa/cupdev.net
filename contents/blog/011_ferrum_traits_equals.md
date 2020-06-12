@@ -5,6 +5,9 @@ tags:  javascript, programming
 category: tech
 lang: en
 template: article.pug
+blurb:
+  This post discusses the implementation of ferrum.js and how it
+  can be used to implement equals in a safe, sound way in javascript.
 ---
 
 A while back, we released [ferrum.js](https://github.com/adobe/ferrum),

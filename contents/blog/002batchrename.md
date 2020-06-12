@@ -4,6 +4,10 @@ date:  Sun, 12 May 2013 23:25:53 +0200
 tags:  tech, unix, linux, cli, sed, awk
 category: tech/cli
 template: article.pug
+blurb:
+  This post discusses how standard unix tools can be used
+  to rename a lot of files according to a regexp based search
+  and replace rule.
 ---
 
 There are a few tools that provide batch renaming for the shell,

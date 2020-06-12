@@ -5,6 +5,9 @@ tags:  tech, windows, c++, inexor, inexor
 category: tech/programming
 lang: en
 template: article.pug
+blurb:
+  This blog post discusses the analysis of a bug in the microsoft
+  visual studio C++ Standard Library.
 ---
 
 Yesterday night I found [this commit](https://github.com/inexor-game/code/commit/ba8dd46289e39a51a67b40fe32d3e19607b63f2e) in one of the branches

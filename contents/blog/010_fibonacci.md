@@ -5,6 +5,10 @@ tags:  algorithms, programming
 category: tech
 lang: en
 template: article.pug
+blurb: |
+  How to calculate numbers from the Fibonacci sequence quickly and efficiently.
+  If you have been directed to this post in response to asking a question about
+  Fibonacci sequences; in this case: hi!
 ---
 
 This blog post shall given an overview over different methods to compute the fibonacci sequence

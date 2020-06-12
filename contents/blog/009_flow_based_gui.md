@@ -5,6 +5,9 @@ tags:  ui, programming
 category: tech
 lang: en
 template: article.pug
+blurb:
+  My critique of both the command line interface and the graphical user interface; response to a blog post
+  by someone criticizing command line interfaces.
 ---
 
 **Note:** I wrote this as a comment http://gandre.ws/blog/blog/2015/04/07/why-the-command-line-is-not-usable/
