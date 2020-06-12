@@ -12,6 +12,12 @@ block body
           h2.title
             a(href=post.url)
               = post.title
-          span.text !{post.metadata.blurb ? post.metadata.blurb : post.html}
+          span.text
+            if (post.metadata.blurb)
+              | !{post.metadata.blurb}
+              |    
+              a(href=post.url) Read the post.
+            else
+              | !{post.html}
 
           include comments/comments-overview
